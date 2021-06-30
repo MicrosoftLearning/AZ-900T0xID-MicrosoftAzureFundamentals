@@ -42,7 +42,7 @@ Dalam tugas ini, kita akan menelusuri galeri Azure QuickStart dan menyebarkan te
     | Windows OS version | **2019-Datacenter** |
     | | |
     
-    ** Catatan: Tidak ada biaya yang terkait dengan templat ini.
+    **Catatan**: Tidak ada biaya yang terkait dengan templat ini.
 
 8. Klik **Review + Create**.
 

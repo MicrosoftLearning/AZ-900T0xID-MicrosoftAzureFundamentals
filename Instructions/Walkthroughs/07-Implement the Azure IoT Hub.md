@@ -27,7 +27,7 @@ Dalam tugas ini, kita akan membuat IoT hub.
 
     **Catatan** - Ingatlah untuk mengubah **xxxx** sehingga itu membuat **Nama IoT Hub** yang unik.
 
-4. Buka tab **Management**, dan gunakan daftar menurun untuk mengatur **Pricing and scale tier** ke **S1: ****Standard tier**.
+4. Buka tab **Management**, dan gunakan daftar menurun untuk mengatur **Pricing and scale tier** ke **S1: Standard tier**.
 
 5. Klik tombol **Review + create**.
 

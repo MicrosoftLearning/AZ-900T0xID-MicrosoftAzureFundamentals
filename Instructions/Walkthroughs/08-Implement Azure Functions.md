@@ -52,7 +52,7 @@ Dalam tugas ini, kita akan menggunakan fungsi Webhook + API untuk menampilkan pe
 
 1. Pada bilah **HttpTrigger1**, di bagian **Developer**, klik **Code + Test**. 
 
-1. Di **HttpTrigger1 \| **Bilah **Code + Test**, tinjau kode yang dibuat secara otomatis dan perhatikan bahwa kode tersebut dirancang untuk menjalankan permintaan HTTP dan informasi log. Selain itu, perhatikan fungsi menampilkan pesan Hello dengan sebuah nama. 
+1. Di **HttpTrigger1 \|** Bilah **Code + Test**, tinjau kode yang dibuat secara otomatis dan perhatikan bahwa kode tersebut dirancang untuk menjalankan permintaan HTTP dan informasi log. Selain itu, perhatikan fungsi menampilkan pesan Hello dengan sebuah nama. 
 
     ![Cuplikan layar kode fungsi. Pesan Hello disorot.](../images/0704.png)
 
@@ -72,7 +72,7 @@ Dalam tugas ini, kita akan menggunakan fungsi Webhook + API untuk menampilkan pe
 
     ![Cuplikan layar URL fungsi yang disorot dan contoh nama pengguna yang ditambahkan di bilah alamat browser web. Pesan hello dan nama pengguna juga disorot untuk mengilustrasikan output dari fungsi di jendela browser utama.](../images/0707.png)
 
-1. Saat fungsi berjalan, setiap pemanggilan dilacak. Untuk melihat jejak di portal Microsoft Azure, kembali ke **HttpTrigger1 \| **Bilah **Code + Test** dan klik **Monitor**.
+1. Saat fungsi berjalan, setiap pemanggilan dilacak. Untuk melihat jejak di portal Microsoft Azure, kembali ke **HttpTrigger1 \|** Bilah **Code + Test** dan klik **Monitor**.
 
     ![Cuplikan layar log informasi jejak yang dihasilkan dari menjalankan fungsi di dalam editor fungsi di portal Microsoft Azure.](../images/0709.png) 
 
