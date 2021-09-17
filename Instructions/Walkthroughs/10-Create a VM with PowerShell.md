@@ -3,11 +3,11 @@ wts:
     title: '10 - Membuat komputer virtual dengan PowerShell (10 mnt)'
     module: 'Modul 03: Menjelaskan solusi inti dan alat manajemen'
 ---
-# 10 - Membuat komputer virtual dengan PowerShell
+# 10 - Membuat VM dengan PowerShell (10 mnt)
 
 Dalam panduan ini, kita akan mengonfigurasi Cloud Shell, menggunakan modul Azure PowerShell untuk membuat grup sumber daya dan komputer virtual, serta meninjau rekomendasi Azure Advisor. 
 
-# Tugas 1: Mengonfigurasi Cloud Shell (10 mnt)
+# Tugas 1: Mengonfigurasi Cloud Shell 
 
 Dalam tugas ini, kita akan mengonfigurasi Cloud Shell. 
 
@@ -17,11 +17,17 @@ Dalam tugas ini, kita akan mengonfigurasi Cloud Shell.
 
     ![Cuplikan layar ikon Portal Microsoft Azure, Azure Cloud Shell.](../images/1002.png)
 
-3. Jika sebelumnya Anda sudah pernah menggunakan Cloud Shell, lanjutkan ke tugas berikutnya. 
+3. Saat diminta untuk memilih **Bash** atau **PowerShell**, pilih **PowerShell**.
 
-4. Saat diminta untuk memilih **Bash** atau **PowerShell**, pilih **PowerShell**.
+4. Di layar **You have no storage mounted**, pilih **Show advanced settings**, lalu isikan informasi berikut
 
-5. Saat diminta, klik **Create storage**, dan tunggu hingga Azure Cloud Shell dimulai. 
+    | Settings | Values |
+    |  -- | -- |
+    | Resource Group | **Buat nama grup sumber daya baru** |
+    | Storage account (Buat akun baru menggunakan nama yang unik secara global (mis. cloudshellstoragemystorage)) | **cloudshellxxxxxxx** |
+    | File share (buat yang baru) | **shellstorage** |
+
+5. Pilih **Create Storage**
 
 # Tugas 2: Membuat grup sumber daya dan komputer virtual
 
@@ -29,19 +35,13 @@ Dalam tugas ini, kita akan menggunakan PowerShell untuk membuat grup sumber daya
 
 1. Pastikan **PowerShell** dipilih di menu menurun di sebelah kiri atas panel Cloud Shell.
 
-2. Pada sesi PowerShell, di dalam panel Cloud Shell, buat grup sumber daya baru. 
-
-    ```PowerShell
-    New-AzResourceGroup -Name myRGPS -Location EastUS
-    ```
-
-3. Pastikan grup sumber daya baru Anda. 
+2. Verifikasikan grup sumber daya baru dengan menjalankan perintah berikut di jendela PowerShell. Tekan **Enter** untuk menjalankan perintah.
 
     ```PowerShell
     Get-AzResourceGroup | Format-Table
     ```
 
-4. Buat komputer virtual. Saat diminta, berikan nama pengguna (**azureuser**) dan kata sandi (**Pa$$w0rd1234**) yang akan dikonfigurasi sebagai akun Administrator lokal di komputer virtual tersebut. Pastikan Anda menyertakan karakter centang (`) di akhir setiap baris kecuali yang terakhir (tidak boleh ada karakter centang jika Anda mengetik seluruh perintah pada satu baris).
+3. Buat komputer virtual. Dengan menempelkan perintah berikut ke jendela terminal. 
 
     ```PowerShell
     New-AzVm `
@@ -53,9 +53,10 @@ Dalam tugas ini, kita akan menggunakan PowerShell untuk membuat grup sumber daya
     -SecurityGroupName "myNSGPS" `
     -PublicIpAddressName "myPublicIpPS"
     ```
-** Tunggu hingga komputer virtual disebarkan sebelum menutup PowerShell
+    
+4. Saat diminta, berikan nama pengguna (**azureuser**) dan kata sandi (**Pa$$w0rd1234**) yang akan dikonfigurasi sebagai akun Administrator lokal di komputer virtual azureadmin
 
-5. Tutup panel Cloud Shell sesi PowerShell.
+5. Setelah VM dibuat, tutup panel Cloud Shell sesi PowerShell.
 
 6. Di portal Microsoft Azure, cari **Virtual machines** dan pastikan bahwa **myVMPS** sedang berjalan. Ini mungkin membutuhkan waktu beberapa menit.
 
@@ -77,13 +78,14 @@ Dalam tugas ini, kita akan berlatih menjalankan perintah PowerShell dari Cloud S
     Get-AzVM -name myVMPS -status | Format-Table -autosize
     ```
 
-4. Hentikan komputer virtual. Ketika diminta, konfirmasi (Yes) untuk tindakan tersebut. 
+4. Hentikan komputer virtual menggunakan perintah berikut. 
 
     ```PowerShell
     Stop-AzVM -ResourceGroupName myRGPS -Name myVMPS
     ```
+5. Ketika diminta, konfirmasi (Yes) untuk tindakan tersebut. Tunggu status **Succeeded**.
 
-5. Pastikan status komputer virtual Anda. PowerState sekarang semestinya **dibatalkan alokasinya**. Anda juga dapat memastikan status komputer virtual di portal. 
+6. Pastikan status komputer virtual Anda. PowerState sekarang semestinya **dibatalkan alokasinya**. Anda juga dapat memastikan status komputer virtual di portal. Tutup Cloudshell.
 
     ```PowerShell
     Get-AzVM -name myVMPS -status | Format-Table -autosize

@@ -3,44 +3,36 @@ wts:
     title: '18 - Mempelajari Pusat Kepercayaan (5 mnt)'
     module: 'Modul 05: Mendeskripsikan fitur identitas, tata kelola, privasi, dan kepatuhan'
 ---
-# 18 - Mempelajari Pusat Kepercayaan
+# 18 - Mempelajari Penawaran Kepatuhan Microsoft (5 mnt)
 
-Dalam panduan ini, kami akan mengakses Pusat Kepercayaan, Delete resource group (STP), dan Manajer Kepatuhan.
+Dalam panduan ini, kita akan mengakses Penawaran Kepatuhan, Service Trust Portal (STP), dan Pengelola Kepatuan. 
 
-# Tugas 1: Mengakses Pusat Kepercayaan (5 mnt)
+# Tugas 1: Mengakses Penawaran Kepatuhan Microsoft
 
-1. Di browser, buka halaman [Penawaran kepatuhan Pusat Kepercayaan Microsoft](https://docs.microsoft.com/id-id/microsoft-365/compliance/offering-home).
+1. Di browser, navigasikan ke halaman [Penawaran Kepatuhan](https://docs.microsoft.com/en-us/compliance/regulatory/offering-home).
 
-2. Perhatikan penawaran yang dikelompokkan menjadi **Global**, **US Government**, **Industry**, dan **Regional**.
+2. Di halaman Kepatuhan, perhatikan penawaran yang dikelompokkan menjadi **Global**, **US Government**, **Industry**, dan **Regional**.
 
-3. Di grup **Global**, klik **ISO 27001**. 
+3. Di grup **Global**, klik **ISO 27001**. Gulir semua informasi yang tersedia. Menggulir ke bawah di halaman ini akan membawa Anda ke bagian **Penawaran kepatuhan khusus untuk Azure**
 
     **Catatan:** Halaman Standar Manajemen Keamanan Informasi ISO 27001 adalah khusus untuk jenis informasi kepatuhan yang kami sediakan.
 
-4. Perhatikan bahwa ada ringkasan tentang standar; layanan cloud dalam cakupan; audit, laporan dan sertifikat; penilaian dan laporan; FAQ; sumber daya; serta laporan resmi. 
-
-5. Jelajahi konten apa pun yang menarik bagi Anda. 
-
-    **Catatan:** Apakah ada penawaran kepatuhan yang paling diminati oleh organisasi Anda?
 
 # Tugas 2: Mengakses Service Trust Portal (STP)
 
-1. Di browser, buka [Service Trust Portal (STP)](https://servicetrust.microsoft.com)
+1. Di browser, navigasikan ke halaman [Service Trust Portal](https://servicetrust.microsoft.com/).
 
-2. Lihat bagian **Audit**. Di bagian ini, terdapat laporan audit independen untuk berbagai layanan Cloud Microsoft.
-
-    **Catatan:** Saat ini tulisan ini dibuat, konten terkait **ISO 27001** dapat diakses melalui label yang dapat diklik. Klik label untuk membuka halaman yang menampilkan konten terkait ISO 27001. Jika tidak tersedia, pilih item lain. 
+2. Lihat bagian **Laporan Audit**. Di bagian ini, terdapat laporan audit independen untuk berbagai layanan Cloud Microsoft. Jika ingin mencoba Pengelola Kepatuhan, Anda harus masuk.
 
 3. Mungkin perlu beberapa menit untuk memuat semua audit. Anda harus masuk ke akun Microsoft untuk melihat laporan tertentu.
 
-4. Jika Anda punya waktu, tinjau informasi lain yang menarik bagi Anda. 
 
-# Tugas 3: Mengakses Manajer Kepatuhan
+# Tugas 3: Mengakses Pengelola Kepatuhan melalui Service Trust Portal.
 
-1. Manajer Kepatuhan memudahkan untuk melakukan penilaian risiko layanan cloud Microsoft. Gunakan Manajer Kepatuhan untuk mengelola aktivitas kepatuhan organisasi Anda mulai dari implementasi hingga pelaporan. Jika ingin mencoba Manajer Kepatuhan, Anda harus masuk.
+Pengelola Kepatuhan memudahkan untuk melakukan penilaian risiko layanan cloud Microsoft. Gunakan Pengelola Kepatuhan untuk mengelola aktivitas kepatuhan organisasi Anda mulai dari implementasi hingga pelaporan. 
 
-2. Sebagai gantinya, buka halaman [Panduan Kepatuhan](https://servicetrust.microsoft.com/Documents/TrustDocuments). 
+1. Jika browser Anda masih terbuka dari Tugas 2, lanjutkan ke Langkah 2. Jika tidak, di browser, navigasikan ke halaman [Pengelola Kepatuhan](https://servicetrust.microsoft.com/ComplianceManager). 
 
-3. Jika Anda punya waktu, tinjau informasi lain yang menarik bagi Anda. 
+2. Gulir turun ke **Laporan Audit**. Silakan melihat-lihat.
 
 Selamat! Dalam panduan ini, Anda mengakses Pusat Kepercayaan, Service Trust Portal (STP), dan Manajer Kepatuhan.

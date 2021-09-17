@@ -3,14 +3,14 @@ wts:
     title: '20 - Menggunakan Kalkulator Azure TCO (10 mnt)'
     module: 'Modul 06: Menjelaskan manajemen biaya dan persetujuan tingkat layanan Azure'
 ---
-# 20 - Menggunakan Kalkulator Azure TCO
+# 20 - Menggunakan Kalkulator Azure TCO (10 mnt)
 
 
 Dalam panduan ini, Anda akan menggunakan Kalkulator Total Biaya Kepemilikan (TCO) guna menghasilkan laporan perbandingan biaya untuk lingkungan lokal.
 
 **Catatan**: Panduan ini memberikan contoh definisi infrastruktur lokal dan beban kerja untuk pusat data yang khas. Untuk membuat laporan Kalkulator TCO, gunakan definisi contoh atau berikan detail infrastruktur dan beban kerja lokal Anda *yang sebenarnya*.
 
-# Tugas 1: Mengonfigurasi Kalkulator TCO (10 mnt)
+# Tugas 1: Mengonfigurasi kalkulator TCO
 
 Dalam tugas ini, kami akan menambahkan informasi infrastruktur ke kalkulator. 
 
@@ -30,7 +30,6 @@ Dalam tugas ini, kami akan menambahkan informasi infrastruktur ke kalkulator.
     | RAM (GB) | **16** |
     | Optimize by | **CPU** |
     | Windows Server 2008/2008 R2 | **Off** |
-    | | |
 
 3. Pilih **+ Add server workload** untuk membuat baris definisi beban kerja server yang baru. 
 
@@ -46,7 +45,6 @@ Dalam tugas ini, kami akan menambahkan informasi infrastruktur ke kalkulator.
     | RAM (GB) | **16** |
     | Optimize by | **CPU** |
     | Windows Server 2008/2008 R2 | **Off** |
-    | | |
 
 4. Di panel **Storage**, klik **Add storage**.
 
@@ -58,14 +56,12 @@ Dalam tugas ini, kami akan menambahkan informasi infrastruktur ke kalkulator.
     | Capacity | **60 TB** |  
     | Backup | **120 TB** |
     | Archive | **0 TB** |
-    | | |
 
 5. Di panel **Networking**, tambahkan bandwidth. 
 
     | Settings | Value |
     | -- | -- |
     | Outbound bandwidth | 15 TB|
-    | | |
 
 6. Klik **Next**.
 
@@ -74,7 +70,6 @@ Dalam tugas ini, kami akan menambahkan informasi infrastruktur ke kalkulator.
     | Settings | Value |
     | -- | -- |
     | Currency | **Euro** |
-    | | |
 
 8. Klik **Next**.
 
@@ -88,8 +83,6 @@ Dalam tugas ini, kami akan meninjau rekomendasi penghematan biaya dan mengunduh 
     | -- | -- |
     | Timeframe| **3 years** |
     | Region | **North Europe** |
-    | | |
-
 
 2. Untuk mengubah informasi yang Anda berikan, pergi ke bagian bawah halaman, dan klik **Back**. 
 
