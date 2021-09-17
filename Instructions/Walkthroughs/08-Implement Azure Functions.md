@@ -1,4 +1,4 @@
-﻿---
+---
 wts:
     title: '08 - Menerapkan Azure Functions (5 mnt)'
     module: 'Modul 03: Menjelaskan solusi inti dan alat manajemen'
