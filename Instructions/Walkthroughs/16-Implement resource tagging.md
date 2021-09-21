@@ -71,7 +71,7 @@ Dalam tugas ini, kita akan membuat akun penyimpanan untuk menguji pemberian tag 
 
 1. Di Portal Microsoft Azure, dari bilah **All services**, cari dan pilih **Tags**.
 
-2. Catat semua tag dan nilainya. Klik **Company : **Pasangan kunci/nilai **Contoso**. Ini akan menampilkan bilah yang menunjukkan akun penyimpanan yang baru dibuat, selama Anda menyertakan tag selama penyebarannya. 
+2. Catat semua tag dan nilainya. Klik **Company:** Pasangan kunci/nilai **Contoso**. Ini akan menampilkan bilah yang menunjukkan akun penyimpanan yang baru dibuat, selama Anda menyertakan tag selama penyebarannya. 
 
    ![Cuplikan layar dari Tag dengan perusahaan dan contoso dipilih.](../images/1705.png)
 

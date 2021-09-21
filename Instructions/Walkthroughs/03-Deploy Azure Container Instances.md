@@ -20,7 +20,7 @@ Dalam tugas ini, kita akan membuat instans kontainer baru untuk aplikasi web.
 
 	| Setting| Value|
 	|----|----|
-	| Subscription | *** Gunakan default yang ada*** |
+	| Subscription | ***Gunakan default yang ada*** |
 	| Resource group | **Buat nama grup sumber daya baru** |
 	| Container name| **mycontainer**|
 	| Region | **(US) East US** |

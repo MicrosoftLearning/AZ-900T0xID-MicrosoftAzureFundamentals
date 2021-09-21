@@ -73,7 +73,7 @@ Dalam tugas ini, kita akan menggunakan fungsi Webhook + API untuk menampilkan pe
 
     ![Cuplikan layar URL fungsi yang disorot dan contoh nama pengguna yang ditambahkan di bilah alamat browser web. Pesan hello dan nama pengguna juga disorot untuk mengilustrasikan output dari fungsi di jendela browser utama.](../images/0707.png)
 
-10. Saat Anda menekan enter, fungsi berjalan dan setiap permohonan akan dilacak. Untuk melihat pelacakan, kembali ke Portal **HttpTrigger1 \| **Bilah **Code + Test** dan klik **Monitor**. **Konfigurasi** Wawasan Aplikasi dengan memilih fungsi yang Anda pilih dan wilayahnya. Pilih **Create**.
+10. Saat Anda menekan enter, fungsi berjalan dan setiap permohonan akan dilacak. Untuk melihat pelacakan, kembali ke Portal **HttpTrigger1 \|** Bilah **Code + Test** dan klik **Monitor**. **Konfigurasi** Wawasan Aplikasi dengan memilih fungsi yang Anda pilih dan wilayahnya. Pilih **Create**.
 
     ![Cuplikan layar log informasi jejak yang dihasilkan dari menjalankan fungsi di dalam editor fungsi di portal Microsoft Azure.](../images/0709.png) 
 

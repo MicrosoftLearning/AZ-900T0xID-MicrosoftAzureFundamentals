@@ -22,7 +22,7 @@ Dalam tugas ini, Anda akan membuat Aplikasi Web Azure App Service.
     | Setting | Value |
     | -- | -- |
     | Subscription | **Gunakan default yang ada** |
-    | Resource Group | ** Buat nama grup sumber daya baru**|
+    | Resource Group | **Buat nama grup sumber daya baru**|
     | Name | **myDockerWebAppxxxx** |
     | Publish | **Docker Container** |
     | Operating System | **Linux** |

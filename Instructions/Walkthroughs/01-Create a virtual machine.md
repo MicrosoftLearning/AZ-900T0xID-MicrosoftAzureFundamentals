@@ -26,7 +26,7 @@ Dalam panduan ini, kita akan membuat komputer virtual di portal Microsoft Azure,
     | Size | **Standard D2s v3**|
     | Administrator account username | **azureuser** |
     | Administrator account password | **Pa$$w0rd1234**|
-    | Inbound port rules - | **Allow select ports **|
+    | Inbound port rules | **Allow select ports**|
     | Select inbound ports | **RDP (3389)** dan **HTTP (80)**| 
 
 5. Beralihlah ke tab Jaringan untuk memastikan **HTTP (80) dan RDP (3389)** dipilih di bagian **Select inbound ports**.
