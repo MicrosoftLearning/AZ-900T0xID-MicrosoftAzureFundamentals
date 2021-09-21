@@ -3,25 +3,30 @@ wts:
     title: '15 - Mengelola kunci sumber daya (5 menit)'
     module: 'Modul 05: Mendeskripsikan fitur identitas, tata kelola, privasi, dan kepatuhan'
 ---
-# 15 - Mengelola kunci sumber daya
+# 15 - Mengelola kunci sumber daya (5 mnt)
 
 Dalam panduan ini, kita akan menambahkan kunci ke grup sumber daya dan menguji menghapus grup sumber daya. Kunci dapat diterapkan dalam langganan ke grup sumber daya, atau sumber daya individu untuk mencegah penghapusan atau pengubahan sumber daya penting yang tidak disengaja.  
 
-# Tugas 1: Membuat grup sumber daya (5 menit)
+# Tugas 1: Membuat grup sumber daya 
 
 Dalam tugas ini, kita akan membuat grup sumber daya untuk latihan ini. 
 
 1. Masuk ke [portal Microsoft Azure](https://portal.azure.com).
 
-2. Di bilah **Search** di bagian atas portal, cari **Resource group**. 
+2. Dari bilah **All services**, cari dan pilih **Resource groups**, lalu klik **+ Add**, **+ Create**, atau **+ New**.
 
-3. Lalu klik **+Add +New +Create** 
+3. Buat grup sumber daya baru. Klik **Create** setelah Anda selesai. 
 
     | Setting | Value |
     | -- | -- |
-    | Subscription | **Gunakan langganan Anda** |
-    | Name | **myRGLocks** |
+    | Subscription | **Pilih langganan Anda** |
+    | Resource group | **myRGLocks** |
     | Region | **(US) East US** |
+    | | |
+
+4. Buat **Review + create**, lalu klk **Create**.
+
+5. **Refresh** halaman grup sumber daya dan klik entri yang mewakili grup sumber daya yang baru dibuat.
     
 
 # Tugas 2:  Menambahkan Kunci ke grup sumber daya dan menguji penghapusan
@@ -40,7 +45,7 @@ Dalam tugas ini, kita akan menambahkan kunci sumber daya ke grup sumber daya dan
 
     | Setting | Value |
     | -- | -- |
-    | Lock name | **RGLock** |
+    | Lock name | '''RGLock''' |
     | Lock Type | **Delete** |
     | | |
 

@@ -3,7 +3,7 @@ wts:
     title: '21 - Menghitung SLA Komposit (5 mnt)'
     module: 'Modul 06: Menjelaskan manajemen biaya dan persetujuan tingkat layanan Azure'
 ---
-# 21 - Menghitung SLA Komposit
+# 21 - Menghitung SLA Komposit (5 mnt)
 
 Dalam panduan ini, kami akan menentukan ketersediaan SLA layanan Azure dan kemudian menghitung ketersediaan yang diharapkan berdasarkan SLA komposit aplikasi.
 
@@ -14,7 +14,7 @@ Aplikasi contoh kami terdiri dari layanan Azure ini. Kami tidak akan membahas ko
 + **Gateway Aplikasi**: Untuk mengelola akses aplikasi, dan penskalaan. 
 + **Azure SQL Database**: Untuk menyimpan data aplikasi. 
 
-# Tugas 1: Tentukan nilai persentase waktu aktif SLA untuk aplikasi kita (5 mnt)
+# Tugas 1: Menentukan nilai persentase waktu aktif SLA untuk aplikasi kita
 
 1. Di browser, buka halaman [Ringkasan SLA untuk layanan Azure](https://azure.microsoft.com/id-id/support/legal/sla/summary/).
 

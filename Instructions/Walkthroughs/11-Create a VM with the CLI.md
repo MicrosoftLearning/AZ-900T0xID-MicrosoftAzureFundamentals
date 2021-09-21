@@ -3,29 +3,33 @@ wts:
     title: '11 - Membuat komputer virtual dengan CLI (10 mnt)'
     module: 'Modul 03: Menjelaskan solusi inti dan alat manajemen'
 ---
-# 11 - Membuat komputer virtual dengan CLI
+# 11 - Membuat VM dengan CLI (10 mnt)
 
 Dalam panduan ini, kita akan mengonfigurasi Cloud Shell, menggunakan modul Azure CLI untuk membuat grup sumber daya dan komputer virtual, serta meninjau rekomendasi Azure Advisor. 
 
-# Tugas 1: Mengonfigurasi Cloud Shell (10 mnt)
+# Tugas 1: Mengonfigurasi Cloud Shell 
 
-Dalam tugas ini, kita akan mengonfigurasi Cloud Shell. 
+Dalam tugas ini, kita akan menggunakan Cloud Shell., lalu Azure CLI untuk membuat grup sumber daya dan komputer virtual.  
 
 1. Masuk ke [portal Microsoft Azure](https://portal.azure.com).
 
 2. Dari portal Microsoft Azure, buka **Azure Cloud Shell** dengan mengklik ikon di kanan atas Portal Microsoft Azure.
 
     ![Cuplikan layar ikon Portal Microsoft Azure, Azure Cloud Shell.](../images/1002.png)
+   
+3. Di dialog Selamat Datang ke Azure Cloud Shell, jika diminta untuk memilih **Bash** atau **PowerShell**, pilih **Bash**. 
 
-3. Jika sebelumnya Anda sudah pernah menggunakan Cloud Shell, lanjutkan ke tugas berikutnya. 
+4. Jendela baru akan terbuka yang menyatakan **Anda tidak memiliki penyimpanan yang dimuat**. Pilih **advanced settings**.
 
-4. Saat diminta untuk memilih **Bash** atau **PowerShell**, pilih **Bash**. 
+5. Di layar pengaturan lanjutan, isi bidang berikut, lalu klik Buat Penyimpanan.
+    - Resource Group **Buat nama grup sumber daya baru**
+    - Storage Account: Buat akun baru menggunakan nama yang unik secara global (mis. cloudshellstoragemystorage)
+    - File Share: Buat yang baru dan beri nama cloudshellfileshare
 
-5. Saat diminta, klik **Create storage**, dan tunggu hingga Azure Cloud Shell dimulai. 
 
-# Tugas 2: Membuat grup sumber daya dan komputer virtual
+# Tugas 2: Menggunakan CLI untuk membuat komputer virtual.
 
-Dalam tugas ini, kita akan menggunakan Azure CLI untuk membuat grup sumber daya dan komputer virtual.  
+Dalam tugas ini, kita akan menggunakan Azure CLI untuk membuat grup sumber daya dan komputer virtual.
 
 1. Pastikan **Bash** dipilih di menu menurun di sebelah kiri atas panel Cloud Shell (dan jika belum dipilih, pilihlah).
 
@@ -43,20 +47,20 @@ Dalam tugas ini, kita akan menggunakan Azure CLI untuk membuat grup sumber daya 
     az group list --output table
     ```
 
-4. Buat komputer virtual baru. Pastikan bahwa setiap baris kecuali yang terakhir diikuti oleh karakter garis miring terbalik (`\`). Jika Anda mengetik seluruh perintah pada baris yang sama, jangan gunakan karakter garis miring terbalik apa pun. 
+4. Di Cloud Shell, masukkan perintah di bawah dan pastikan bahwa setiap baris, kecuali yang terakhir, diikuti oleh karakter garis miring terbalik (`\`). Jika Anda mengetik seluruh perintah pada baris yang sama, jangan gunakan karakter garis miring terbalik apa pun. 
 
     ```cli
     az vm create \
     --name myVMCLI \
     --resource-group myRGCLI \
     --image UbuntuLTS \
-    --location EastUS \
+    --location EastUS2 \
     --admin-username azureuser \
     --admin-password Pa$$w0rd1234
     ```
 
     >**Catatan**: Jika Anda menggunakan baris perintah di komputer Windows, ganti karakter garis miring terbalik (`\`) dengan karakter tanda sisipan (`^`).
-    
+
     **Catatan**: Perintah ini akan memerlukan waktu 2 hingga 3 menit hingga selesai. Perintah tersebut akan membuat komputer virtual dan berbagai sumber daya yang terkait dengan perintah seperti penyimpanan, jaringan, dan sumber daya keamanan. Jangan lanjutkan ke langkah berikutnya hingga penyebaran komputer virtual selesai. 
 
 5. Saat perintah selesai dijalankan, di jendela browser, tutup panel Cloud Shell.

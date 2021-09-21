@@ -3,11 +3,11 @@ wts:
     title: '22 - Membuka Permintaan Dukungan (5 mnt)'
     module: 'Tidak digunakan dalam ujian saat ini'
 ---
-# 22 - Membuka Permintaan Dukungan
+# 22 - Membuka Permintaan Dukungan (5 mnt)
 
 Dalam panduan ini, kita akan melihat opsi paket dukungan yang tersedia dan kemudian berlatih membuat dan memantau permintaan dukungan baru.
 
-# Tugas 1: Melihat opsi paket dukungan yang tersedia dan permintaan dukungan teknis (5 mnt)
+# Tugas 1: Melihat opsi paket dukungan yang tersedia dan permintaan dukungan teknis
 
 1. Masuk ke  [**Portal Microsoft Azure**](https://portal.azure.com).
 
@@ -44,13 +44,12 @@ Dalam panduan ini, kita akan melihat opsi paket dukungan yang tersedia dan kemud
     | Summary | **Monthly charge is not correct** |
     | Problem type | **Pricing** |
     | Problem subtype | **Help me discover the service prices** |    
-    | | |
 
 2. Klik **Next: Solutions** dan baca solusi yang disarankan.
 
 3. Klik **Next: Details**.  Saat mengirimkan permintaan dukungan yang sebenarnya, Anda akan memberikan informasi sebanyak mungkin untuk memungkinkan penyelesaian masalah dengan cepat. 
 
-    **Catatan:** Kita akan berhenti di titik ini. Apakah Anda mengerti cara mengirimkan permintaan dukungan?
+    **Catatan:** Kita akan BERHENTI di titik ini. Apakah Anda mengerti cara mengirimkan permintaan dukungan?
 
 4. Klik **All support requests**. Di sinilah permintaan dukungan Anda ditampilkan. Sebuah email juga dikirim ke alamat email Anda yang berisi detail permintaan dukungan.
 

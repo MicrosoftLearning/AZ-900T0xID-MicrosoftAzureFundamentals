@@ -3,26 +3,26 @@ wts:
     title: '14 - Mengelola akses dengan RBAC (5 menit)'
     module: 'Modul 05: Mendeskripsikan fitur identitas, tata kelola, privasi, dan kepatuhan'
 ---
-# 14 - Mengelola akses dengan RBAC
+# 14 - Mengelola akses dengan RBAC (5 mnt)
 
-Dalam panduan ini, kita akan menetapkan peran dan menampilkan log aktivitas. 
+Dalam panduan ini, kita akan menetapkan peran izin ke sumber daya dan menampilkan log.
 
-# Tugas 1: Menampilkan dan menetapkan peran (5 menit)
+# Tugas 1: Menampilkan dan menetapkan peran
 
 Dalam tugas ini, kita akan menetapkan peran Kontributor komputer virtual. 
 
 1. Masuk ke [portal Microsoft Azure](https://portal.azure.com).
 
-2. Dari bilah **All services**, cari dan pilih **Resource groups**, lalu klik **+ Add, + Create, atau + New**.
+2. Dari bilah **All services**, cari dan pilih **Resource groups**, lalu klik **+Add +New +Create**.
 
 3. Buat grup sumber daya baru. Klik **Create** setelah Anda selesai. 
 
     | Setting | Value |
     | -- | -- |
-    | Subscription | **Pilih langganan Anda** |
+    | Subscription | **Gunakan default yang tersedia** |
     | Resource group | **myRGRBAC** |
     | Region | **(US) East US** |
-    | | |
+   
 
 4. Buat **Review + create**, lalu klk **Create**.
 
@@ -38,8 +38,8 @@ Dalam tugas ini, kita akan menetapkan peran Kontributor komputer virtual.
     | -- | -- |
     | Role | **Virtual machine contributor** |
     | Assign access to | **user, group, or service principal** |
-    | Select | akun pengguna Anda |
-    | | |
+    | Select | **Add your user account** |
+ 
 
     **Catatan:** Peran Kontributor komputer virtual memungkinkan Anda mengelola komputer virtual, tetapi tidak mengakses sistem operasinya atau mengelola jaringan virtual dan akun penyimpanan tempat itu tersambung.
 
@@ -63,8 +63,7 @@ Dalam tugas ini, kita akan menampilkan log aktivitas untuk memverifikasi penetap
 
     **Catatan**: Dapatkah Anda mengetahui cara menghapus penetapan peran Anda?
 
-Selamat! Anda telah menetapkan peran dan menampilkan log aktivitas. 
+Selamat! Anda telah membuat grup sumber daya, menetapkan peran akses kepadanya, dan melihat log aktivitas. 
 
 **Catatan**: Untuk menghindari biaya tambahan, Anda dapat menghapus grup sumber daya ini. Telusuri grup sumber daya, klik grup sumber daya, lalu klik **Delete resource group**. Pastikan nama grup sumber daya lalu klik **Delete**. Pantau **Notifications** untuk melihat bagaimana proses penghapusan.
-
 

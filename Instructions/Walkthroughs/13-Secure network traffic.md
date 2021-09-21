@@ -3,46 +3,43 @@ wts:
     title: '13 - Mengamankan lalu lintas jaringan (10 menit)'
     module: 'Modul 04: Menjelaskan fitur keamanan umum dan keamanan jaringan'
 ---
-# 13 - Mengamankan lalu lintas jaringan
+# 13 - Mengamankan lalu lintas jaringan (10 menit)
 
 Dalam panduan ini, kita akan mengonfigurasi kelompok keamanan jaringan.
 
-# Tugas 1: Membuat komputer virtual (10 menit)
+# Tugas 1: Menciptakan komputer virtual
 
 Dalam tugas ini, kita akan membuat komputer virtual Windows Server 2019 Datacenter. 
 
 1. Masuk ke [portal Microsoft Azure](https://portal.azure.com).
 
-2. Dari bilah **All services**, cari dan pilih **Virtual machines**, lalu klik **+ Add**.
+2. Dari bilah **All services**, cari dan pilih **Virtual machines.**, lalu klik **+ Add, + Create, + New** Komputer Virtual.
 
 3. Pada tab **Basics**, isi informasi berikut (biarkan default untuk yang lainnya):
 
     | Settings | Values |
     |  -- | -- |
-    | Subscription | **Pilih langganan Anda**|
-    | Resource group | **myRGSecure** (buat baru) |
+    | Subscription | **Gunakan default yang tersedia** |
+    | Resource group | **Buat nama grup sumber daya baru** |
     | Virtual machine name | **SimpleWinVM** |
-    | Location | **(US) East US**|
-    | Image | **Windows Server 2019 Datacenter**|
+    | Region | **(US) East US**|
+    | Image | **Windows Server 2019 Datacenter Gen 1**|
     | Size | **Standard D2s v3**|
     | Administrator account username | **azureuser** |
     | Administrator account password | **Pa$$w0rd1234**|
     | Inbound port rules | **None**|
-    | | |
 
 4. Beralih ke tab **Networking**, dan konfigurasikan pengaturan berikut:
 
     | Settings | Values |
     | -- | -- |
     | NIC network security group | **None**|
-    | | |
 
 5. Beralih ke tab **Management**, dan di bagian **Monitoring**, pilih pengaturan berikut:
 
     | Settings | Values |
     | -- | -- |
     | Boot diagnostics | **Disable**|
-    | | |
 
 6. Biarkan default yang tersisa lalu klik tombol **Review + create** di bagian bawah halaman.
 
@@ -60,17 +57,16 @@ Dalam tugas ini, kita akan membuat komputer virtual Windows Server 2019 Datacent
 
 Dalam tugas ini, kami akan membuat kelompok keamanan jaringan dan mengaitkannya dengan antarmuka jaringan.
 
-1. Dari bilah **All services**, cari dan pilih **Network security groups** lalu klik **+ Add**
+1. Dari bilah **All services**, cari dan pilih **Network security groups**, lalu klik **+ Add,+ Create, + New**
 
 2. Pada tab **Basics** dari bilah **Create network security groups** tentukan pengaturan berikut.
 
     | Setting | Value |
     | -- | -- |
-    | Subscription | **Pilih langganan Anda** |
-    | Resource group | **myRGSecure** |
+    | Subscription | **Gunakan langganan default** |
+    | Resource group | **Pilih default dari menu tarik turun** |
     | Name | **myNSGSecure** |
     | Region | **(US) East US**  |
-    | | |
 
 3. Klik **Review + create** lalu setelah validasi, klik **Create**.
 
@@ -88,11 +84,12 @@ Dalam tugas ini, kita akan mengizinkan lalu lintas RDP ke komputer virtual denga
 
 2. Di panel **Overview**, klik **Connect**.
 
-3. Coba menyabungkan ke komputer virtual menggunakan RDP. Secara default, kelompok keamanan jaringan tidak mengizinkan RDP. Tutup jendela kesalahan. 
+3. Coba hubungkan ke komputer virtual dengan memilih RDP dan mengunduh file RDP yang berjalan. Secara default, kelompok keamanan jaringan tidak mengizinkan RDP. Tutup jendela kesalahan. 
+
 
     ![Cuplikan layar dari pesan kesalahan bahwa koneksi komputer virtual telah gagal.](../images/1201.png)
 
-4. Pada bilah komputer virtual, gulir ke bawah ke bagian **Settings**, klik **Networking**, dan perhatikan aturan masuk untuk kelompok keamanan jaringan **myNSGSecure (attached to network interface: myVMNic)** menolak semua lalu lintas masuk kecuali lalu lintas dalam jaringan virtual dan probe penyeimbang beban.
+4. Pada bilah komputer virtual, gulir turun ke bagian **Settings**, klik **Networking**, dan perhatikan aturan masuk untuk kelompok keamanan jaringan **myNSGSecure (attached to network interface: myVMNic)** menolak semua lalu lintas masuk kecuali lalu lintas dalam jaringan virtual dan probe penyeimbang beban.
 
 5. Di tab **Inbound port rules**, klik **Add inbound port rules**. Klik **Add** setelah Anda selesai. 
 
@@ -103,12 +100,11 @@ Dalam tugas ini, kita akan mengizinkan lalu lintas RDP ke komputer virtual denga
     | Destination | **Any** |
     | Destination port ranges | **3389** |
     | Protocol | **TCP** |
-    | Action | **Allow** |
+    | Pusat | **Allow** |
     | Priority | **300** |
     | Name | **AllowRDP** |
-    | | |
 
-6. Tunggu hingga aturan diprovisi, lalu coba lagi untuk RDP ke komputer virtual. Kali ini Anda akan berhasil. Ingat bahwa pengguna adalah **azureuser** dan kata sandinya adalah **Pa$$w0rd1234**.
+6. Pilih **Add** dan menunggu aturan untuk ditetapkan, kemudian coba lagi RDP ke komputer virtual dengan kembali ke **Connect**. Kali ini Anda harus berhasil. Ingat bahwa pengguna adalah **azureuser** dan kata sandinya adalah **Pa$$w0rd1234**.
 
 # Tugas 4: Mengonfigurasi aturan port keamanan keluar untuk menolak akses Internet.
 
@@ -122,7 +118,7 @@ Dalam tugas ini, kita akan membuat aturan port keluar NSG yang akan menolak akse
 
     **Catatan**: Sekarang kita akan mengonfigurasi aturan untuk menolak akses internet keluar. 
 
-4. Di portal Microsoft Azure, navigasikan kembali ke bilah komputer virtual **SimpleWinVM**. 
+4. Kembali di portal Microsoft Azure, navigasikan kembali ke bilah komputer virtual **SimpleWinVM**. 
 
 5. Di bawah **Settings**, klik **Networking**, lalu **Outbond port rules**.
 
@@ -138,12 +134,11 @@ Dalam tugas ini, kita akan membuat aturan port keluar NSG yang akan menolak akse
     | Destination service tag | **Internet** |
     | Destination port ranges | **\*** |
     | Protocol | **TCP** |
-    | Action | **Deny** |
+    | Pusat | **Deny** |
     | Priority | **4000** |
     | Name | **DenyInternet** |
-    | | |
 
-8. Kembali ke sesi RDP Anda. 
+8. Klik **Add** Kembali ke VM RDP Anda. 
 
 9. Telusuri ke **https://www.microsoft.com**. Halaman semestinya tidak ditampilkan. Anda mungkin perlu bekerja melalui pop-up keamanan tambahan yang ditingkatkan IE.  
 

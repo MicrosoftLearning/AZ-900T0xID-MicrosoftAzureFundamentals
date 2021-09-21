@@ -3,11 +3,11 @@ wts:
     title: '19 - Menggunakan Kalkulator Harga Azure (10 menit)'
     module: 'Modul 06: Menjelaskan manajemen biaya dan persetujuan tingkat layanan Azure'
 ---
-# 19 - Menggunakan Kalkulator Harga Azure
+# 19 - Menggunakan Kalkulator Harga (10 mnt)
 
 Dalam panduan ini, kita akan menggunakan Kalkulator Harga Azure untuk membuat perkiraan biaya komputer virtual Azure dan sumber daya jaringan terkait.
 
-# Tugas 1: Mengonfigurasi kalkulator harga (10 menit)
+# Tugas 1: Mengonfigurasi kalkulator harga
 
 Dalam tugas ini, kita akan memperkirakan biaya infrastruktur sampel menggunakan Kalkulator Harga Azure. 
 
@@ -23,15 +23,13 @@ Dalam tugas ini, kita akan memperkirakan biaya infrastruktur sampel menggunakan 
 
 4. Ubah konfigurasi komputer virtual default.
 
-    | Kawasan | Sistem operasi | Jenis |
-    |------|----------------|----|
-    | Eropa Utara | Windows | (Khusus OS) |
-    | | |
-
-    | Tingkat | Instans |
-    |----|--------|
-    | Standar | A2: 2 Core, 3,5 GB RAM, 135 GB Penyimpanan sementara |
-    | | |
+    | Settings | Value |
+    | -- | -- |
+    | Region | **North Europe** |
+    | Operating System | **Windows** |
+    | Typr | **(Khusus OS)** |
+    | Tier | **Standard** |  
+    | Instance | **A2: 2 Core, 3,5 GB RAM, 135 GB Penyimpanan sementara** |
 
    ![Cuplikan layar dari area konfigurasi vm dalam halaman web perkiraan kalkulator harga Azure. Contoh nilai properti konfigurasi vm yang dimasukkan pengguna  yang disorot menunjukkan cara menentukan konfigurasi vm dalam perkiraan kalkulator harga Azure.](../images/1902.png)
 
@@ -73,25 +71,15 @@ Dalam tugas ini, kita akan memperkirakan biaya infrastruktur sampel menggunakan 
 
 11. Tambahkan nama untuk konfigurasi Application Gateway. Panduan ini menggunakan nama **App Gateway: Windows VM**. Ubah konfigurasi Application Gateway default dengan menambahkan detail berikut.
 
-    | Region | Tier | Size |
-    | ------ | ---- | ---- |
-    | North Europe | Basic | Small |
-    | | |
-
-    | Instances | Hours |
-    | ------- | ------- |
-    | 1 | 365 |
-    | | |
-
-    | Data processed |
-    | -------------- |
-    | 50 GB |
-    | | |
-
-    | Zone 1: North America, Europe |
-    | ----------------------------- |
-    | 50 GB |
-    | | |
+    | Settings | Value |
+    | -- | -- |
+    | Region | **North Europe** |
+    | Tier | **Basic** |
+    | Size | **Small** |
+    | Instances | **1** |  
+    | Hours | **365** |
+    | Data processed | **50 GB** |
+    | Zone 1: North America, Europe | **50 GB**|
 
     ![Cuplikan layar dari area konfigurasi gateway aplikasi dalam halaman web perkiraan kalkulator harga Azure.](../images/1909.png)
 

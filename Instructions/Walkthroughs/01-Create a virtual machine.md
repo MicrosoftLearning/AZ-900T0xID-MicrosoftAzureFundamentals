@@ -1,118 +1,103 @@
 ---
 wts:
     title: '01 - Membuat komputer virtual di portal (10 menit)'
-    module: 'Modul 02 â€“ Core Azure Services (Beban Kerja)'
+    module: 'Modul 02 – Core Azure Services (Beban Kerja)'
 ---
-# 01 - Membuat komputer virtual di portal
+# 01 - Membuat komputer virtual di portal (10 menit)
 
 Dalam panduan ini, kita akan membuat komputer virtual di portal Microsoft Azure, menyambungkan ke komputer virtual, menginstal peran server web dan mengujinya. 
 
 **Catatan**: Luangkan waktu selama panduan ini untuk mengeklik dan membaca ikon Informasi. 
 
-# Tugas 1: Membuat komputer virtual (10 menit)
+# Tugas 1: Membuat komputer virtual 
+1. Masuk ke portal Azure: **https://portal.azure.com**
 
-Dalam tugas ini, kita akan membuat Pusat Data Windows Server 2019 - komputer virtual Gen1. 
+3. Dari bilah **All services** di Menu Portal, cari dan pilih **Virtual machines**, lalu klik **+Add, +Create, +New** dan pilih **+Virtual machine** dari menu tarik turun.
 
-1. Masuk ke [portal Azure (https://portal.azure.com)](https://portal.azure.com?azure-portal=true).
-
-2. Dari bilah **All services**, cari dan pilih **Virtual machine**, lalu klik **+ Add** dan pilih **+Virtual machine**.
-
-3. Pada tab **Basics**, isi informasi berikut (biarkan default untuk yang lainnya):
+4. Pada tab **Basics**, isi informasi berikut (biarkan default untuk yang lainnya):
 
     | Settings | Values |
     |  -- | -- |
-    | Subscription | **Pilih langganan Anda**|
-    | Resource group | **myRGVM** (buat baru) |
-    | Virtual machine name | **myVm** |
-    | Location | **(US) East US**|
+    | Subscription | **Gunakan default yang ada** |
+    | Resource group | **Buat nama grup sumber daya baru** |
+    | Virtual machine name | **myVM** |
+    | Region | **(US) East US**|
     | Image | **Windows Server 2019 Datacenter - Gen1**|
-    | Size | Standard D2s v3|
+    | Size | **Standard D2s v3**|
     | Administrator account username | **azureuser** |
     | Administrator account password | **Pa$$w0rd1234**|
-    | Inbound port rules - Allow select ports | **RDP (3389)** dan **HTTP (80)**|
-    | | |
+    | Inbound port rules | **Allow select ports**|
+    | Select inbound ports | **RDP (3389)** dan **HTTP (80)**| 
 
-4. Beralih ke tab Networking, dan cari **Select inbound ports**:
+5. Beralihlah ke tab Jaringan untuk memastikan **HTTP (80) dan RDP (3389)** dipilih di bagian **Select inbound ports**.
 
-    | Settings | Values |
-    | -- | -- |
-    | Select inbound ports | **HTTP (80), RDP (3389)**|
-    | | |
-
-    **Catatan** - Pastikan port 80 dan 3389 dipilih
-
-5. Beralih ke tab Management, dan di bagian **Monitoring**, pilih pengaturan berikut:
+6. Beralih ke tab Management, dan di bagian **Monitoring**, pilih pengaturan berikut:
 
     | Settings | Values |
     | -- | -- |
     | Boot diagnostics | **Disable**|
-    | | |
 
-6. Biarkan default yang tersisa lalu klik tombol **Review + create** di bagian bawah halaman.
+7. Biarkan nilai yang tersisa pada default, lalu klik tombol **Review + create** di bagian bawah halaman.
 
-7. Setelah melewati proses Validasi, klik tombol **Create**. Diperlukan waktu lima hingga tujuh menit untuk menyebarkan komputer virtual.
+8. Setelah melewati proses Validasi, klik tombol **Create**. Diperlukan waktu lima hingga tujuh menit untuk menyebarkan komputer virtual.
 
-8. Anda akan menerima pembaruan di halaman penyebaran dan melalui area **Notifications** (ikon bel di menu atas).
-
-* **Pastikan bahwa Port 80 dan 3389 telah dibuka**
+9. Anda akan menerima pembaruan di halaman penyebaran dan melalui area **Notifications** (ikon bel di bilah menu atas).
 
 # Tugas 2: Menyambungkan ke komputer virtual
 
-Dalam tugas ini, kita akan terhubung ke komputer virtual baru menggunakan RDP. 
+Dalam tugas ini, kita akan terhubung ke komputer virtual baru menggunakan RDP (Remote Desktop Protocol). 
 
 1. Cari **myVM** dan pilih komputer virtual baru.
 
-    **Catatan**: Anda juga dapat menggunakan tautan **Go to resource** di halaman penyebaran atau tautan ke sumber daya di area **Notifications**.
+    **Catatan**: Anda juga dapat menggunakan tautan **Go to resource** di halaman penyebaran atau tautan ke sumber daya di bagian **Notifications**.
 
-2. Pada bilah **Overview** komputer virtual, klik tombol **Connect** dan pilih **RDP**.
+2. Di bilah **Overview** komputer virtual, klik tombol **Connect** dan pilih **RDP** dari menu tarik turun.
 
     ![Cuplikan layar properti komputer virtual dengan tombol Connect yang disorot.](../images/0101.png)
 
     **Catatan**: Petunjuk berikut memberi tahu Anda cara menyambungkan ke komputer virtual dari komputer Windows. Di Mac, Anda memerlukan klien RDP seperti  Remote Desktop Client ini dari Mac App Store dan di komputer Linux, Anda dapat menggunakan klien RDP sumber terbuka.
 
-2. Di halaman **Connect to virtual machine**, pertahankan opsi default untuk tersambung dengan alamat IP publik melalui port 3389 dan klik **Download RDP File**.
+2. Di halaman **Connect to virtual machine**, biarkan opsi default untuk tersambung dengan alamat IP publik melalui port 3389 dan klik **Download RDP File**. File akan diunduh di sebelah kiri bawah layar.
 
-3. **Buka** file RDP yang diunduh dan klik **Connect** saat diminta. 
+3. **Buka** file RDP yang diunduh (ada di sebelah kiri bawah komputer lab) dan klik **Connect** bila diminta. 
 
     ![Cuplikan layar properti komputer virtual dengan tombol Connect yang disorot. ](../images/0102.png)
 
-4. Di jendela **Windows Security**, pilih **More choices** lalu **Use adifferent account**. Berikan nama pengguna (.\azureuser) dan kata sandi (Pa$$w0rd1234). Klik **OK** untuk menyambungkan.
-
-    ![Cuplikan layar dari dialog keamanan Windows dengan akun berbeda yang dipilih serta nama pengguna azure dimasukkan dan sebuah kata sandi..](../images/0103.png)
+4. Di jendela **Windows Security**, masuk menggunakan Kredensial Admin yang Anda gunakan saat membuat VM **azureuser** dan kata sandi **Pa$$w0rd1234**. 
 
 5. Anda mungkin menerima peringatan sertifikat selama proses masuk. Klik **Yes** atau untuk membuat koneksi dan menyambungkan ke komputer virtual yang Anda sebarkan. Anda akan berhasil tersambung.
 
     ![Cuplikan layar dari dialog peringatan Sertifikat yang memberi tahu pengguna tentang sertifikat yang tidak tepercaya, dengan tombol Yes disorot. ](../images/0104.png)
 
-Selamat! Anda telah menyebarkan dan tersambung ke komputer virtual Windows Server di Azure
+Komputer Virtual baru (myVM) akan diluncurkan di dalam Lab Anda. Tutup Pengelola Server dan jendela dasbor yang muncul (klik “x” di bagian kanan atas). Anda akan melihat latar belakang biru dari komputer virtual Anda. **Selamat!** Anda telah menyebarkan dan menghubungkan Komputer Virtual yang menjalankan Windows Server. 
 
 # Tugas 3: Menginstal peran server web dan mengujinya
 
-Dalam tugas ini, instal peran Web Server di server dan pastikan halaman selamat datang IIS default dapat ditampilkan.
+Dalam tugas ini, instal peran Web Server di server di Komputer Virtual yang baru Anda buat dan pastikan halaman selamat datang IIS default dapat ditampilkan. 
 
-1. Buka perintah PowerShell di komputer virtual, dengan mengklik tombol **Start**, mengetikkan **PowerShell**, mengklik kanan **Windows PowerShell**, dan memilih **Run as administrator** di menu klik kanan.
+1. Di komputer virtual, luncurkan PowerShell dengan mencari **PowerShell** di bilah pencarian, saat ditemukan klik kanan **Windows PowerShell** ke **Run as administrator**.
 
     ![Cuplikan layar dari desktop komputer virtual dengan tombol mulai diklik dan PowerShell dipilih dengan run as an administrator yang disorot.](../images/0105.png)
 
-2. Instal fitur **Web-Server** di komputer virtual dengan menjalankan perintah berikut di perintah PowerShell. Anda dapat menyalin dan menempelkan perintah ini.
+2. Di PowerShell, instal fitur **Web-Server** di komputer virtual dengan menjalankan perintah berikut. 
 
     ```PowerShell
     Install-WindowsFeature -name Web-Server -IncludeManagementTools
     ```
   
-3. Setelah selesai akan ada baris yang menyatakan **Success** dengan nilai **True**. Anda tidak perlu menghidupkan ulang komputer virtual untuk menyelesaikan penginstalan. Tutup koneksi RDP ke komputer virtual.
+3. Setelah selesai akan ada baris yang menyatakan **Success** dengan nilai **True**. Anda tidak perlu menghidupkan ulang komputer virtual untuk menyelesaikan penginstalan. Tutup koneksi RDP ke VM dengan mengklik **x** di bilah biru di bagian tengah atas komputer virtual. 
 
     ![Cuplikan layar dari jendela perintah PowerShell dengan perintah Install-WindowsFeature -name Web-Server -IncludeManagementTools berhasil diselesaikan dan output yang menyatakan berhasil.](../images/0106.png)
 
-4. Kembali ke portal, navigasikan kembali ke bilah **Overview** myVM dan gunakan tombol **Click to clipboard** untuk menyalin alamat IP publik myVM, buka tab browser baru, tempelkan alamat IP publik ke dalam kotak teks URL, dan tekan tombol **Enter** untuk menjelajahinya.
+4. Kembali ke portal, navigasikan kembali ke bilah **Overview** dari myVM dan gunakan tombol **Click to clipboard** untuk menyalin alamat IP publik myVM, lalu buka tab browser baru, tempelkan alamat IP publik ke kotak teks URL, dan tekan tombol **Enter** untuk menjelajahinya.
 
     ![Cuplikan layar panel properti komputer virtual portal Microsoft Azure dengan alamat IP yang disalin.](../images/0107.png)
 
-5. Halaman selamat datang IIS Web Server default akan terbuka.
+5. Halaman selamat datang IIS Web Server default akan ditampilkan.
 
     ![Cuplikan layar dari halaman selamat datang server web IIS default sedang diakses melalui alamat ip publik di browser web.](../images/0108.png)
 
-Selamat! Anda telah membuat server web yang dapat diakses melalui alamat IP publiknya. Jika Anda memiliki aplikasi web untuk dibuat menjadi host, Anda dapat menyebarkan file aplikasi ke komputer virtual dan menjadikannya host untuk akses publik di komputer virtual yang disebarkan.
+**Selamat!** Anda telah membuat VM baru yang menjalankan server web yang dapat diakses melalui alamat IP publiknya. Jika Anda memiliki aplikasi web untuk dibuat menjadi host, Anda dapat menyebarkan file aplikasi ke komputer virtual dan menjadikannya host untuk akses publik di komputer virtual yang disebarkan.
 
 
 **Catatan**: Untuk menghindari biaya tambahan, Anda dapat menghapus grup sumber daya ini. Telusuri grup sumber daya, klik grup sumber daya, lalu klik **Delete resource group**. Pastikan nama grup sumber daya lalu klik **Delete**. Pantau **Notifications** untuk melihat verifikasi bahwa penghapusan berhasil diselesaikan. 

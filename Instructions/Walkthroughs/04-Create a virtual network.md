@@ -1,68 +1,55 @@
 ---
 wts:
     title: '04 - Membuat jaringan virtual (20 menit)'
-    module: 'Modul 02 â€“ Layanan Core Azure (Beban Kerja)'
+    module: 'Modul 02 – Layanan Core Azure (Beban Kerja)'
 ---
-# 04 - Membuat jaringan virtual
+# 04 - Membuat jaringan virtual (20 menit)
 
-Dalam panduan ini, kita akan membuat jaringan virtual, menyebarkan dua komputer virtual ke jaringan virtual tersebut dan kemudian mengizinkan satu komputer virtual untuk melakukan ping ke yang lain di dalam jaringan virtual tersebut.
+Dalam panduan ini, kita akan membuat jaringan virtual, menyebarkan dua komputer virtual ke jaringan virtual tersebut, lalu mengonfigurasinya untuk mengizinkan satu komputer virtual melakukan ping ke komputer virtual lain di dalam jaringan virtual tersebut.
 
-# Tugas 1: Membuat jaringan virtual (20 menit)
+# Tugas 1: Menciptakan jaringan virtual 
 
 Dalam tugas ini, kita akan membuat jaringan virtual. 
 
 1. Masuk ke portal Microsoft Azure di <a href="https://portal.azure.com" target="_blank"><span style="color: #0066cc;" color="#0066cc">https://portal.azure.com</span></a>
 
-2. Dari bilah **All services**, cari dan pilih **Virtual networks**, lalu klik **+ Add, + Create, atau + New**. 
+2. Dari bilah **All services**, cari dan pilih **Virtual networks**, lalu klik **+ Add, + Create, + New**. 
 
-3. Pada bilah **Create virtual network**, isi informasi berikut (biarkan default untuk yang lainnya):
+3. Pada tab **Basics**, isi informasi berikut (biarkan default untuk yang lainnya):
 
     | Setting | Value | 
     | --- | --- |
-    | Subscription | **Pilih langganan Anda** |
-    | Resource group | **myRGVNet** (buat baru) |
+    | Subscription | **Biarkan default yang tersedia** |
+    | Resource Group | **Buat nama grup sumber daya baru** |
     | Name | **vnet1** |
-    | Location | **(US) East US** |
-    | Address space |**10.1.0.0/16** |
-    | Subnet - Name | **default** |
-    | Subnet Address range | **10.1.0.0/24** |
+    | Region | **(US) East US** |
+    
+   
+4. Klik tombol **Review + create**. Pastikan validasi lolos.
 
-    ![Cuplikan layar dari langkah "Dasar" dari bilah Create virtual network dengan bidang default.](../images/0301a.png)
-    ![Cuplikan layar dari langkah "IP Addresses" dari bilah Create virtual network dengan bidang default.](../images/0301b.png)
-
-5. Klik tombol **Review + create**. Pastikan validasi lolos.
-
-6. Klik tombol **Create** untuk menyebarkan jaringan virtual. 
-
-    **Catatan**: Dalam organisasi Anda, bagaimana Anda mengetahui jaringan virtual dan alamat IP mana yang Anda perlukan?
 
 # Tugas 2: Membuat dua komputer virtual
 
 Dalam tugas ini, kita akan membuat dua komputer virtual di jaringan virtual. 
 
-1. Dari bilah **All services**, cari **Virtual machines** lalu klik **+ Add** dan pilih **+ Virtual machines**. 
+1. Dari bilah **All services**, cari dan pilih **Virtual machines.**, lalu klik **+ Add, + Create, + New**, dari menu tarik turun pilih **Virtual Machine**. 
 
 2. Pada tab **Basics**, isi informasi berikut (biarkan default untuk yang lainnya):
 
    | Setting | Value | 
    | --- | --- |
-   | Subscription | **Pilih langganan Anda**  |
-   | Resource group |  **myRGVNet** |
+   | Subscription | **Gunakan default yang ada** |
+   | Resource group |  **Pilih default di menu tarik turun** |
    | Virtual machine name | **vm1**|
    | Region | **(US) East US** |
-   | Image | **Windows Server 2019 Datacenter** |
+   | Image | **Windows Server 2019 Datacenter - Gen1** |
    | Username| **azureuser** |
    | Password| **Pa$$w0rd1234** |
    | Public inbound ports| Pilih **Allow selected ports**  |
    | Selected inbound ports| **RDP (3389)** |
-   |||
+   
 
-3. Pilih tab **Networking**. Pastikan komputer virtual ditempatkan di jaringan virtual vnet1. Tinjau pengaturan default, tetapi jangan lakukan perubahan apa pun. 
-
-   | Setting | Value | 
-   | --- | --- |
-   | Virtual network | **vnet1** |
-   |||
+3. Pilih tab **Networking**. Pastikan komputer virtual ditempatkan di jaringan virtual **vnet1**. Tinjau pengaturan default, tetapi jangan lakukan perubahan apa pun. 
 
 4. Klik **Review + create**. Setelah Validasi lolos, klik **Create**. Waktu penyebaran dapat berbeda-beda, tetapi biasanya perlu waktu antara tiga hingga enam menit untuk disebarkan.
 
@@ -75,37 +62,39 @@ Dalam tugas ini, kita akan membuat dua komputer virtual di jaringan virtual.
     | Resource group | **myRGVNet** |
     | Virtual machine name |  **vm2** |
     | Virtual network | **vnet1** |
-    | Public IP | (baru) **vm2-ip** |
-    |||
+    | Public IP | **vm2-ip** |
 
-7. Tunggu hingga kedua komputer virtual disebarkan 
+7. Tunggu semua komputer virtual menerapkan dan statusnya menjadi *berjalan*.
 
 # Tugas 3: Menguji koneksi 
 
-Dalam tugas ini, kami akan mengizinkan upaya masuk ke satu VM dan melakukan ping ke VM lainnya. 
+Pada tugas ini, kita akan coba menguji apakah komputer virtual dapat berkomunikasi (ping) dengan satu sama lain. Jika tidak, kita akan menginstal aturan untuk memungkinkan koneksi ICMP. Biasanya koneksi ICMP otomatis diblokir.
 
 1. Dari bilah **All resource**, cari **vm1**, buka bilah **Overview**, dan pastikan **Status** adalah **Running**. Anda mungkin perlu melakukan **Refresh** halamannya.
 
-2. Di bilah **Overview**, klik tombol **Connect**.
+2. Di bilah **Overview**, pilih **Connect**, lalu pilih **RDP** dari menu tarik turun.
 
     **Catatan**: Petunjuk berikut memberi tahu Anda cara menyambungkan ke komputer virtual dari komputer Windows. 
 
-3. Di bilah **Connect to virtual machine**, pertahankan opsi default untuk tersambung dengan alamat IP publik melalui port 3389 dan klik **Download RDP File**.
+3. Di bilah **Connect RDP**, biarkan opsi default untuk terhubung dengan alamat IP melalui port 3389 dan klik **Download RDP File**.
 
-4. Buka file RDP yang diunduh dan klik **Connect** saat diminta. 
+4. Buka file RDP yang diunduh (ada di sebelah kiri bawah VM Anda) dan klik **Connect** bila diminta. 
 
 5. Di jendela **Windows Security**, ketik nama pengguna **azureuser** dan kata sandi **Pa$$w0rd1234**, lalu klik **OK**.
 
-6. Anda mungkin menerima peringatan sertifikat selama proses masuk. Klik **Yes** atau untuk membuat koneksi dan menyambungkan ke komputer virtual yang Anda sebarkan. Anda akan berhasil tersambung.
+6. Anda mungkin menerima peringatan sertifikat selama proses masuk. Klik **Yes** untuk membuat koneksi dan menghubungkan ke komputer virtual yang disebarkan. Anda akan berhasil tersambung. Tutup Windows Server dan jendela Dasbor yang muncul. Anda akan melihat latar belakang Windows Biru. Kini Anda berada di komputer virtual.
 
-7. Buka perintah PowerShell di komputer virtual, dengan mengklik tombol **Start**, mengetikkan **PowerShell**, mengklik kanan **Windows PowerShell** di menu klik kanan, dan klik **Run as administrator**
+7. Buka PowerShell komputer virtual dengan mengklik tombol **Start**, dan dalam Pencarian, ketikkan **PowerShell**, klik kanan **Windows PowerShell** ke **Run as administrator**
 
-8. Di Powershell, ketik perintah berikut untuk berupaya berkomunikasi dengan vm2, Anda akan melihat bahwa Anda berhasil.
+8. Di PowerShell, coba lakukan ping ke vm2 dengan mengetikkan:
 
    ```PowerShell
    ping vm2
    ```
 
-Selamat! Anda telah mengonfigurasi dan menyebarkan dua komputer virtual dalam jaringan virtual. Anda telah menguji bahwa Anda dapat berkomunikasi antara dua komputer virtual. 
+ 9. Anda akan berhasil. Anda telah melakukan ping ke VM2 dari VM1.
+
+
+**Selamat!** Anda telah mengonfigurasi dan menyebarkan dua komputer virtual di sebuah jaringan virtual, lalu Anda telah dapat menghubungkan keduanya.
 
 **Catatan**: Untuk menghindari biaya tambahan, Anda dapat menghapus grup sumber daya ini. Telusuri grup sumber daya, klik grup sumber daya, lalu klik **Delete resource group**. Pastikan nama grup sumber daya lalu klik **Delete**. Pantau **Notifications** untuk melihat bagaimana proses penghapusan.
