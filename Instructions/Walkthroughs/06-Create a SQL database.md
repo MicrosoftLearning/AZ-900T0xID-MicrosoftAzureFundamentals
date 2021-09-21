@@ -1,4 +1,4 @@
-﻿---
+---
 wts:
     title: '06 - Membuat database SQL (5 menit)'
     module: 'Modul 02 – Core Azure Services (Beban Kerja)'
