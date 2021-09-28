@@ -7,41 +7,22 @@ wts:
 
 Dalam panduan ini, kita akan menambahkan kunci ke grup sumber daya dan menguji menghapus grup sumber daya. Kunci dapat diterapkan dalam langganan ke grup sumber daya, atau sumber daya individu untuk mencegah penghapusan atau pengubahan sumber daya penting yang tidak disengaja.  
 
-# Tugas 1: Membuat grup sumber daya 
 
-Dalam tugas ini, kita akan membuat grup sumber daya untuk latihan ini. 
-
-1. Masuk ke [portal Microsoft Azure](https://portal.azure.com).
-
-2. Dari bilah **All services**, cari dan pilih **Resource groups**, lalu klik **+ Add**, **+ Create**, atau **+ New**.
-
-3. Buat grup sumber daya baru. Klik **Create** setelah Anda selesai. 
-
-    | Setting | Value |
-    | -- | -- |
-    | Subscription | **Pilih langganan Anda** |
-    | Resource group | **myRGLocks** |
-    | Region | **(US) East US** |
-    | | |
-
-4. Buat **Review + create**, lalu klk **Create**.
-
-5. **Refresh** halaman grup sumber daya dan klik entri yang mewakili grup sumber daya yang baru dibuat.
-    
-
-# Tugas 2:  Menambahkan Kunci ke grup sumber daya dan menguji penghapusan
+# Tugas 1:  Menambahkan Kunci ke grup sumber daya dan menguji penghapusan
 
 Dalam tugas ini, kita akan menambahkan kunci sumber daya ke grup sumber daya dan menguji menghapus grup sumber daya. 
 
-1. Di portal Microsoft Azure, buka grup sumber daya yang baru dibuat **myRGLocks**.
+1. Masuk ke [portal Microsoft Azure](https://portal.azure.com).
 
-2. Anda dapat menerapkan kunci ke langganan, grup sumber daya, atau sumber daya individu untuk mencegah penghapusan atau pengubahan sumber daya penting yang tidak disengaja. 
+2. Di portal Microsoft Azure, navigasi grup sumber daya yang baru dibuat **myRGLocks**.
 
-3. Di bagian **Settings**, klik **Locks**, lalu klik **+ Add**. 
+3. Anda dapat menerapkan kunci ke langganan, grup sumber daya, atau sumber daya individu untuk mencegah penghapusan atau pengubahan sumber daya penting yang tidak disengaja. 
+
+4. Di bagian **Settings**, klik **Locks**, lalu klik **+ Add**. 
 
     ![Cuplikan layar grup sumber daya myRGLocks dengan panel Kunci yang ditampilkan.](../images/1601.png)
 
-4. Konfigurasikan kunci baru. Setelah selesai, klik **OK**. 
+5. Konfigurasikan kunci baru. Setelah selesai, klik **OK**. 
 
     | Setting | Value |
     | -- | -- |
@@ -49,11 +30,11 @@ Dalam tugas ini, kita akan menambahkan kunci sumber daya ke grup sumber daya dan
     | Lock Type | **Delete** |
     | | |
 
-5. Klik **Overview** dan klik **Delete resource group**. Ketik nama grup sumber daya dan klik **OK**. Anda menerima pesan kesalahan yang menyatakan bahwa grup sumber daya terkunci dan tidak dapat dihapus.
+6. Klik **Overview** dan klik **Delete resource group**. Ketik nama grup sumber daya dan klik **OK**. Anda menerima pesan kesalahan yang menyatakan bahwa grup sumber daya terkunci dan tidak dapat dihapus.
 
     ![Cuplikan layar dari kunci hapus gagal.](../images/1602.png)
 
-# Tugas 3: Menguji menghapus anggota grup sumber daya.
+# Tugas 2: Menguji menghapus anggota grup sumber daya.
 
 Dalam tugas ini, kita akan menguji apakah kunci sumber daya melindungi akun penyimpanan di grup sumber daya. 
 
@@ -85,7 +66,7 @@ Dalam tugas ini, kita akan menguji apakah kunci sumber daya melindungi akun peny
 
     **Catatan**: Meskipun kita tidak membuat kunci khusus untuk akun penyimpanan, kita membuat kunci di tingkat grup sumber daya, yang berisi akun penyimpanan. Dengan demikian, kunci tingkat *induk* ini mencegah kita menghapus sumber daya dan akun penyimpanan mewarisi kunci dari induknya.
 
-# Tugas 4: Menghapus kunci sumber daya.
+# Tugas 3: Menghapus kunci sumber daya.
 
 Dalam tugas ini, kita akan menghapus kunci sumber daya dan mengujinya. 
 
@@ -99,4 +80,4 @@ Dalam tugas ini, kita akan menghapus kunci sumber daya dan mengujinya.
 
 Selamat! Anda membuat grup sumber daya, menambahkan kunci ke grup sumber daya dan menguji penghapusan, menguji menghapus sumber daya di grup sumber daya, dan menghapus kunci sumber daya. 
 
-**Catatan**: Untuk menghindari biaya tambahan, Anda dapat menghapus grup sumber daya ini. Telusuri grup sumber daya, klik grup sumber daya, lalu klik **Delete resource group**. Pastikan nama grup sumber daya lalu klik **Delete**. Pantau **Notifications** untuk melihat bagaimana proses penghapusan.
+**Catatan**: Untuk menghindari biaya tambahan, Anda dapat secara opsional menghapus grup sumber daya ini. Telusuri grup sumber daya, klik grup sumber daya, lalu klik **Delete resource group**. Verifikasi nama grup sumber daya, lalu klik **Delete**. Pantau **Notifications** untuk melihat bagaimana proses penghapusan.

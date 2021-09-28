@@ -1,7 +1,7 @@
 ---
 wts:
     title: '04 - Membuat jaringan virtual (20 menit)'
-    module: 'Modul 02 – Layanan Core Azure (Beban Kerja)'
+    module: 'Modul 02 â€“ Layanan Core Azure (Beban Kerja)'
 ---
 # 04 - Membuat jaringan virtual (20 menit)
 
@@ -97,4 +97,4 @@ Pada tugas ini, kita akan coba menguji apakah komputer virtual dapat berkomunika
 
 **Selamat!** Anda telah mengonfigurasi dan menyebarkan dua komputer virtual di sebuah jaringan virtual, lalu Anda telah dapat menghubungkan keduanya.
 
-**Catatan**: Untuk menghindari biaya tambahan, Anda dapat menghapus grup sumber daya ini. Telusuri grup sumber daya, klik grup sumber daya, lalu klik **Delete resource group**. Pastikan nama grup sumber daya lalu klik **Delete**. Pantau **Notifications** untuk melihat bagaimana proses penghapusan.
+**Catatan**: Untuk menghindari biaya tambahan, Anda dapat secara opsional menghapus grup sumber daya ini. Telusuri grup sumber daya, klik grup sumber daya, lalu klik **Delete resource group**. Verifikasi nama grup sumber daya, lalu klik **Delete**. Pantau **Notifications** untuk melihat bagaimana proses penghapusan.

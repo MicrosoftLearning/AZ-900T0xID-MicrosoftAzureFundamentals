@@ -1,7 +1,7 @@
 ---
 wts:
     title: '03 - Menyebarkan Azure Container Instances (10 menit)'
-    module: 'Modul 02 – Core Azure Services (Beban Kerja)'
+    module: 'Modul 02 â€“ Core Azure Services (Beban Kerja)'
 ---
 
 # 03 - Menyebarkan Azure Container Instances (10 menit)
@@ -66,4 +66,4 @@ Dalam tugas ini, kita memverifikasi bahwa instans kontainer sedang berjalan deng
 
 **Selamat!** Anda telah menggunakan Portal Microsoft Azure untuk menyebarkan aplikasi ke kontainer di Azure Container Instances.
 
-**Catatan**: Untuk menghindari biaya tambahan, Anda dapat menghapus grup sumber daya ini. Telusuri grup sumber daya, klik grup sumber daya, lalu klik **Delete resource group**. Pastikan nama grup sumber daya, lalu klik **Delete**. Pantau **Notifications** untuk melihat bagaimana proses penghapusan.
+**Catatan**: Untuk menghindari biaya tambahan, Anda dapat secara opsional menghapus grup sumber daya ini. Telusuri grup sumber daya, klik grup sumber daya, lalu klik **Delete resource group**. Verifikasi nama grup sumber daya, lalu klik **Delete**. Pantau **Notifications** untuk melihat bagaimana proses penghapusan.

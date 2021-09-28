@@ -142,4 +142,4 @@ Dalam tugas ini, kita akan membuat aturan port keluar NSG yang akan menolak akse
 
 9. Telusuri ke **https://www.microsoft.com**. Halaman semestinya tidak ditampilkan. Anda mungkin perlu bekerja melalui pop-up keamanan tambahan yang ditingkatkan IE.  
 
-**Catatan**: Untuk menghindari biaya tambahan, Anda dapat menghapus grup sumber daya ini. Telusuri grup sumber daya, klik grup sumber daya, lalu klik **Delete resource group**. Pastikan nama grup sumber daya lalu klik **Delete**. Pantau **Notifications** untuk melihat bagaimana proses penghapusan.
+**Catatan**: Untuk menghindari biaya tambahan, Anda dapat secara opsional menghapus grup sumber daya ini. Telusuri grup sumber daya, klik grup sumber daya, lalu klik **Delete resource group**. Verifikasi nama grup sumber daya, lalu klik **Delete**. Pantau **Notifications** untuk melihat bagaimana proses penghapusan.

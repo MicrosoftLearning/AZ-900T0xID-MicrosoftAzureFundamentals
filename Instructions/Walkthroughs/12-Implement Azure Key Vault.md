@@ -59,4 +59,4 @@ Dalam tugas ini, kita akan menambahkan kata sandi ke key vault.
 
 Selamat! Anda telah membuat Azure Key vault, lalu membuat rahasia kata sandi di brankas kunci tersebut, memberikan key vault yang disimpan dengan aman dan dikelola secara terpusat untuk digunakan dengan aplikasi.
 
-**Catatan**: Untuk menghindari biaya tambahan, Anda dapat menghapus grup sumber daya ini. Telusuri grup sumber daya, klik grup sumber daya, lalu klik **Delete resource group**. Pastikan nama grup sumber daya lalu klik **Delete**. Pantau **Notifications** untuk melihat bagaimana proses penghapusan.
+**Catatan**: Untuk menghindari biaya tambahan, Anda dapat secara opsional menghapus grup sumber daya ini. Telusuri grup sumber daya, klik grup sumber daya, lalu klik **Delete resource group**. Verifikasi nama grup sumber daya, lalu klik **Delete**. Pantau **Notifications** untuk melihat bagaimana proses penghapusan.
