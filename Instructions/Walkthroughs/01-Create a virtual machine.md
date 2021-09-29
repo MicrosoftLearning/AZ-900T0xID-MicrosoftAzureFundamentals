@@ -1,7 +1,7 @@
 ---
 wts:
     title: '01 - Membuat komputer virtual di portal (10 menit)'
-    module: 'Modul 02 ñ Core Azure Services (Beban Kerja)'
+    module: 'Modul 02 ‚Äì Core Azure Services (Beban Kerja)'
 ---
 # 01 - Membuat komputer virtual di portal (10 menit)
 
@@ -22,10 +22,11 @@ Dalam panduan ini, kita akan membuat komputer virtual di portal Microsoft Azure,
     | Resource group | **Buat nama grup sumber daya baru** |
     | Virtual machine name | **myVM** |
     | Region | **(US) East US**|
-    | Image | **Windows Server 2019 Datacenter - Gen1**|
+    | Availability options | Tidak perlu opsi redundansi infrastruktur|
+    | Image | **Windows Server 2019 Datacenter - Gen2**|
     | Size | **Standard D2s v3**|
     | Administrator account username | **azureuser** |
-    | Administrator account password | **Pa$$w0rd1234**|
+    | Administrator account password (ketikkan dengan hati-hati!) | **Pa$$w0rd1234**|
     | Inbound port rules | **Allow select ports**|
     | Select inbound ports | **RDP (3389)** dan **HTTP (80)**| 
 
@@ -47,9 +48,9 @@ Dalam panduan ini, kita akan membuat komputer virtual di portal Microsoft Azure,
 
 Dalam tugas ini, kita akan terhubung ke komputer virtual baru menggunakan RDP (Remote Desktop Protocol). 
 
-1. Cari **myVM** dan pilih komputer virtual baru.
+1. Klik ikon lonceng dari bilah alat biru di atas, dan pilih ‚ÄòGo to resource‚Äô saat penyebaran Anda telah berhasil. 
 
-    **Catatan**: Anda juga dapat menggunakan tautan **Go to resource** di halaman penyebaran atau tautan ke sumber daya di bagian **Notifications**.
+    **Catatan**: Anda juga dapat menggunakan tautan **Go to resource** di halaman penyebaran 
 
 2. Di bilah **Overview** komputer virtual, klik tombol **Connect** dan pilih **RDP** dari menu tarik turun.
 
@@ -69,13 +70,13 @@ Dalam tugas ini, kita akan terhubung ke komputer virtual baru menggunakan RDP (R
 
     ![Cuplikan layar dari dialog peringatan Sertifikat yang memberi tahu pengguna tentang sertifikat yang tidak tepercaya, dengan tombol Yes disorot. ](../images/0104.png)
 
-Komputer Virtual baru (myVM) akan diluncurkan di dalam Lab Anda. Tutup Pengelola Server dan jendela dasbor yang muncul (klik ìxî di bagian kanan atas). Anda akan melihat latar belakang biru dari komputer virtual Anda. **Selamat!** Anda telah menyebarkan dan menghubungkan Komputer Virtual yang menjalankan Windows Server. 
+Komputer Virtual baru (myVM) akan diluncurkan di dalam Lab Anda. Tutup Pengelola Server dan jendela dasbor yang muncul (klik ‚Äúx‚Äù di bagian kanan atas). Anda akan melihat latar belakang biru dari komputer virtual Anda. **Selamat!** Anda telah menyebarkan dan menghubungkan Komputer Virtual yang menjalankan Windows Server. 
 
 # Tugas 3: Menginstal peran server web dan mengujinya
 
 Dalam tugas ini, instal peran Web Server di server di Komputer Virtual yang baru Anda buat dan pastikan halaman selamat datang IIS default dapat ditampilkan. 
 
-1. Di komputer virtual, luncurkan PowerShell dengan mencari **PowerShell** di bilah pencarian, saat ditemukan klik kanan **Windows PowerShell** ke **Run as administrator**.
+1. Di komputer virtual yang baru dibuka, luncurkan PowerShell dengan mencari **PowerShell** di bilah pencarian. Saat ditemukan, klik **Windows PowerShell**, lalu **Run as administrator**.
 
     ![Cuplikan layar dari desktop komputer virtual dengan tombol mulai diklik dan PowerShell dipilih dengan run as an administrator yang disorot.](../images/0105.png)
 
@@ -85,7 +86,7 @@ Dalam tugas ini, instal peran Web Server di server di Komputer Virtual yang baru
     Install-WindowsFeature -name Web-Server -IncludeManagementTools
     ```
   
-3. Setelah selesai akan ada baris yang menyatakan **Success** dengan nilai **True**. Anda tidak perlu menghidupkan ulang komputer virtual untuk menyelesaikan penginstalan. Tutup koneksi RDP ke VM dengan mengklik **x** di bilah biru di bagian tengah atas komputer virtual. 
+3. Setelah selesai, ada baris yang menyatakan **Success** dengan nilai **True**. Anda tidak perlu menghidupkan ulang komputer virtual untuk menyelesaikan penginstalan. Tutup koneksi RDP ke VM dengan mengklik **x** di bilah biru di bagian tengah atas komputer virtual Anda. Anda juga dapat meminimalisasinya dengan mengklik **-** di bilah biru di bagian tengah atas.
 
     ![Cuplikan layar dari jendela perintah PowerShell dengan perintah Install-WindowsFeature -name Web-Server -IncludeManagementTools berhasil diselesaikan dan output yang menyatakan berhasil.](../images/0106.png)
 
@@ -100,4 +101,4 @@ Dalam tugas ini, instal peran Web Server di server di Komputer Virtual yang baru
 **Selamat!** Anda telah membuat VM baru yang menjalankan server web yang dapat diakses melalui alamat IP publiknya. Jika Anda memiliki aplikasi web untuk dibuat menjadi host, Anda dapat menyebarkan file aplikasi ke komputer virtual dan menjadikannya host untuk akses publik di komputer virtual yang disebarkan.
 
 
-**Catatan**: Untuk menghindari biaya tambahan, Anda dapat menghapus grup sumber daya ini. Telusuri grup sumber daya, klik grup sumber daya, lalu klik **Delete resource group**. Pastikan nama grup sumber daya lalu klik **Delete**. Pantau **Notifications** untuk melihat verifikasi bahwa penghapusan berhasil diselesaikan. 
+**Catatan**: Untuk menghindari biaya tambahan, Anda dapat secara opsional menghapus grup sumber daya ini. Telusuri grup sumber daya, klik grup sumber daya, lalu klik **Delete resource group**. Verifikasi nama grup sumber daya, lalu klik **Delete**. Pantau **Notifications** untuk melihat bagaimana proses penghapusan.

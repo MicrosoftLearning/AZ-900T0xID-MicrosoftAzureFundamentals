@@ -23,7 +23,7 @@ Dalam tugas ini, kita akan menggunakan Cloud Shell., lalu Azure CLI untuk membua
 
 5. Di layar pengaturan lanjutan, isi bidang berikut, lalu klik Buat Penyimpanan.
     - Resource Group **Buat nama grup sumber daya baru**
-    - Storage Account: Buat akun baru menggunakan nama yang unik secara global (mis. cloudshellstoragemystorage)
+    - Storage Account: Buat akun baru menggunakan nama yang unik secara global (mis. cloudshellxyzstorage)
     - File Share: Buat yang baru dan beri nama cloudshellfileshare
 
 
@@ -35,13 +35,8 @@ Dalam tugas ini, kita akan menggunakan Azure CLI untuk membuat grup sumber daya 
 
     ![Cuplikan layar Portal Microsofr Azure, Azure Cloud Shell dengan menu menurun Bash disorot.](../images/1002a.png)
 
-2. Di sesi Bash, di dalam panel Cloud Shell, buat grup sumber daya baru. 
 
-    ```cli
-    az group create --name myRGCLI --location EastUS
-    ```
-
-3. Pastikan bahwa grup sumber daya telah dibuat.
+2. Verifikasi grup sumber daya yang Anda gunakan dengan memasukkan perintah berikut.
 
     ```cli
     az group list --output table
@@ -122,4 +117,4 @@ Dalam tugas ini, kita akan meninjau rekomendasi Azure Advisor.
 
 Selamat! Anda telah mengonfigurasi Cloud Shell, membuat komputer virtual menggunakan Azure CLI, berlatih dengan perintah Azure CLI, dan melihat rekomendasi Advisor.
 
-**Catatan**: Untuk menghindari biaya tambahan, Anda dapat menghapus grup sumber daya ini. Telusuri grup sumber daya, klik grup sumber daya, lalu klik **Delete resource group**. Pastikan nama grup sumber daya lalu klik **Delete**. Pantau **Notifications** untuk melihat bagaimana proses penghapusan.
+**Catatan**: Untuk menghindari biaya tambahan, Anda dapat secara opsional menghapus grup sumber daya ini. Telusuri grup sumber daya, klik grup sumber daya, lalu klik **Delete resource group**. Verifikasi nama grup sumber daya, lalu klik **Delete**. Pantau **Notifications** untuk melihat bagaimana proses penghapusan.

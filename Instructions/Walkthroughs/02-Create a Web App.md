@@ -1,7 +1,7 @@
 ---
 wts:
     title: '02 - Membuat Aplikasi Web (10 menit)'
-    module: 'Modul 02 – Core Azure Services (Beban Kerja)'
+    module: 'Modul 02 â€“ Core Azure Services (Beban Kerja)'
 ---
 # 02 - Membuat Aplikasi Web (10 menit)
 
@@ -61,6 +61,6 @@ Dalam tugas ini, kita akan menguji aplikasi web.
 
 5. Beralih kembali ke bilah **Overview** aplikasi web dan gulir ke bawah. Anda akan melihat beberapa bagan pelacakan Data Masuk/Keluar dan Permintaan. Jika mengulangi langkah 4 beberapa kali, Anda akan melihat telemetri yang sesuai ditampilkan di bagan ini. Ini termasuk jumlah permintaan dan waktu respons rata-rata. 
 
-**Catatan**: Untuk menghindari biaya tambahan, Anda dapat menghapus grup sumber daya ini. Telusuri grup sumber daya, klik grup sumber daya, lalu klik **Delete resource group**. Pastikan nama grup sumber daya lalu klik **Delete**. Pantau **Notifications** untuk melihat bagaimana proses penghapusan.
+**Catatan**: Untuk menghindari biaya tambahan, Anda dapat secara opsional menghapus grup sumber daya ini. Telusuri grup sumber daya, klik grup sumber daya, lalu klik **Delete resource group**. Verifikasi nama grup sumber daya, lalu klik **Delete**. Pantau **Notifications** untuk melihat bagaimana proses penghapusan.
 
 Selamat, Anda telah berhasil membuat Azure App Service.

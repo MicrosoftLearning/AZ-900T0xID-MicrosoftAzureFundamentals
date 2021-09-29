@@ -63,7 +63,6 @@ Dalam tugas ini, kita akan membuat akun penyimpanan untuk menguji pemberian tag 
     | Setting | Value | 
     | --- | --- |
     | Tag name | **Company** (mungkin tidak ada dalam daftar menurun) |
-    | Nilai tag | **Contoso** |
 
 6. Klik **Review + create.** dan periksa bahwa validasi berhasil. Klik **Create** untuk menyebarkan akun penyimpanan. 
 
@@ -98,4 +97,4 @@ Dalam tugas ini, kita akan menghapus kebijakan **Membutuhkan tag pada sumber day
 Selamat! Dalam panduan ini, kita telah membuat penetapan kebijakan yang memerlukan pemberian tag, membuat sumber daya (akun penyimpanan), dan menguji pemberian tag, menampilkan sumber daya dengan tag tertentu, serta menghapus kebijakan pemberian tag.
 
 
-**Catatan**: Untuk menghindari biaya tambahan, Anda dapat menghapus grup sumber daya ini. Telusuri grup sumber daya, klik grup sumber daya, lalu klik **Delete resource group**. Pastikan nama grup sumber daya lalu klik **Delete**. Pantau **Notifications** untuk melihat bagaimana proses penghapusan.
+**Catatan**: Untuk menghindari biaya tambahan, Anda dapat secara opsional menghapus grup sumber daya ini. Telusuri grup sumber daya, klik grup sumber daya, lalu klik **Delete resource group**. Verifikasi nama grup sumber daya, lalu klik **Delete**. Pantau **Notifications** untuk melihat bagaimana proses penghapusan.

@@ -11,8 +11,7 @@ Dalam panduan ini, kita akan mengonfigurasi Cloud Shell, menggunakan modul Azure
 
 Dalam tugas ini, kita akan mengonfigurasi Cloud Shell. 
 
-1. Masuk ke [portal Microsoft Azure](https://portal.azure.com).
-
+1. Masuk ke [portal Microsoft Azure](https://portal.azure.com). **Anda dapat menemukan kredensial masuk di dalam tab sumber daya (tepat berada di samping tab instruksi ini!)**
 2. Dari portal Microsoft Azure, buka **Azure Cloud Shell** dengan mengklik ikon di sebelah kanan atas Portal Microsoft Azure.
 
     ![Cuplikan layar ikon Portal Microsoft Azure, Azure Cloud Shell.](../images/1002.png)
@@ -117,4 +116,4 @@ Dalam tugas ini, kita akan meninjau rekomendasi Azure Advisor untuk komputer vir
 
 Selamat! Anda telah mengonfigurasi Cloud Shell, membuat komputer virtual menggunakan PowerShell, berlatih dengan perintah PowerShell, dan melihat rekomendasi Advisor.
 
-**Catatan**: Untuk menghindari biaya tambahan, Anda dapat menghapus grup sumber daya ini. Telusuri grup sumber daya, klik grup sumber daya, lalu klik **Delete resource group**. Verifikasi nama grup sumber daya lalu klik **Delete**. Pantau **Notifications** untuk melihat bagaimana proses penghapusan.
+**Catatan**: Untuk menghindari biaya tambahan, Anda dapat secara opsional menghapus grup sumber daya ini. Telusuri grup sumber daya, klik grup sumber daya, lalu klik **Delete resource group**. Verifikasi nama grup sumber daya, lalu klik **Delete**. Pantau **Notifications** untuk melihat bagaimana proses penghapusan.

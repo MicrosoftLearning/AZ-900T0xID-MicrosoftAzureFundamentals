@@ -1,7 +1,7 @@
 ---
 wts:
     title: '05 - Membuat penyimpanan blob (5 menit)'
-    module: 'Modul 02 – Layanan Core Azure (Beban Kerja)'
+    module: 'Modul 02 â€“ Layanan Core Azure (Beban Kerja)'
 ---
 # 05 - Membuat penyimpanan blob (5 menit)
 
@@ -80,4 +80,4 @@ Dalam tugas ini, kita akan membuat kontainer Blob dan mengunggah file blob.
 
 Selamat! Anda telah membuat akun penyimpanan, lalu bekerja dengan blob penyimpanan.
 
-**Catatan**: Untuk menghindari biaya tambahan, Anda dapat menghapus grup sumber daya ini. Telusuri grup sumber daya, klik grup sumber daya, lalu klik **Delete resource group**. Pastikan nama grup sumber daya lalu klik **Delete**. Pantau **Notifications** untuk melihat bagaimana proses penghapusan.
+**Catatan**: Untuk menghindari biaya tambahan, Anda dapat secara opsional menghapus grup sumber daya ini. Telusuri grup sumber daya, klik grup sumber daya, lalu klik **Delete resource group**. Verifikasi nama grup sumber daya, lalu klik **Delete**. Pantau **Notifications** untuk melihat bagaimana proses penghapusan.
