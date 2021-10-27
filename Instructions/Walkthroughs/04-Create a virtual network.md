@@ -25,7 +25,7 @@ Dalam tugas ini, kita akan membuat jaringan virtual.
     | Region | **(US) East US** |
     
    
-4. Klik tombol **Review + create**. Pastikan validasi lolos.
+4. Klik tombol **Review + create**. Pastikan validasi lolos. Lalu tekan buat untuk menyebarkan sumber daya.
 
 
 # Tugas 2: Membuat dua komputer virtual
