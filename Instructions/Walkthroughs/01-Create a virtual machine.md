@@ -80,7 +80,7 @@ Dalam tugas ini, instal peran Web Server di server di Komputer Virtual yang baru
 
     ![Cuplikan layar dari desktop komputer virtual dengan tombol mulai diklik dan PowerShell dipilih dengan run as an administrator yang disorot.](../images/0105.png)
 
-2. Di PowerShell, instal fitur **Web-Server** di komputer virtual dengan menjalankan perintah berikut. 
+2. Di PowerShell, instal fitur **Web-Server** di komputer virtual dengan menjalankan perintah berikut. (Tempelkan pada baris perintah dan tekan ENTER agar instalasi dimulai).
 
     ```PowerShell
     Install-WindowsFeature -name Web-Server -IncludeManagementTools
