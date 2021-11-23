@@ -11,6 +11,8 @@ Dalam panduan ini, kita akan membuat jaringan virtual, menyebarkan dua komputer 
 
 Dalam tugas ini, kita akan membuat jaringan virtual. 
 
+Catatan: Sebelum lab dimulai, nonaktifkan firewall publik maupun privat di komputer virtual dengan membuka menu Start > Pengaturan > Jaringan dan Internet > Cari Windows Firewall
+
 1. Masuk ke portal Microsoft Azure di <a href="https://portal.azure.com" target="_blank"><span style="color: #0066cc;" color="#0066cc">https://portal.azure.com</span></a>
 
 2. Dari bilah **All services**, cari dan pilih **Virtual networks**, lalu klik **+ Add, + Create, + New**. 
@@ -42,7 +44,7 @@ Dalam tugas ini, kita akan membuat dua komputer virtual di jaringan virtual.
    | Resource group |  **Pilih default di menu tarik turun** |
    | Virtual machine name | **vm1**|
    | Region | **(US) East US** |
-   | Image | **Windows Server 2019 Datacenter - Gen1** |
+   | Image | **Windows Server 2019 Datacenter - Gen2** |
    | Username| **azureuser** |
    | Password| **Pa$$w0rd1234** |
    | Public inbound ports| Pilih **Allow selected ports**  |
@@ -83,6 +85,8 @@ Pada tugas ini, kita akan coba menguji apakah komputer virtual dapat berkomunika
 5. Di jendela **Windows Security**, ketik nama pengguna **azureuser** dan kata sandi **Pa$$w0rd1234**, lalu klik **OK**.
 
 6. Anda mungkin menerima peringatan sertifikat selama proses masuk. Klik **Yes** untuk membuat koneksi dan menghubungkan ke komputer virtual yang disebarkan. Anda akan berhasil tersambung. Tutup Windows Server dan jendela Dasbor yang muncul. Anda akan melihat latar belakang Windows Biru. Kini Anda berada di komputer virtual.
+
+Catatan: Di komputer virtual yang baru dibuat, nonaktifkan firewall publik maupun privat dengan membuka menu Start > Pengaturan > Jaringan dan Internet > Cari Windows Firewall
 
 7. Buka PowerShell komputer virtual dengan mengklik tombol **Start**, dan dalam Pencarian, ketikkan **PowerShell**, klik kanan **Windows PowerShell** ke **Run as administrator**
 
