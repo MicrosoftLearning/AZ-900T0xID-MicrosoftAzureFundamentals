@@ -21,8 +21,8 @@ Dalam tugas ini, kita akan membuat IoT hub.
     |--|--|
     | Subscription | **Biarkan tetap default** |
     | Resource Group | **Buat nama grup sumber daya baru** |
+    | IoT Hub Name | **my-hub-groupxxxxx** |
     | Region | **East US** |
-    | IoT Hub Name | **my-hub-groupxxxx** |
 
     **Catatan** - Ingatlah untuk mengubah **xxxx** sehingga menghasilkan **Nama IoT Hub** yang unik.
 
@@ -42,7 +42,7 @@ Dalam tugas ini, kita akan menambahkan perangkat IoT ke IoT hub.
 
 	![Cuplikan layar penyebaran sedang berlangsung dan penyebaran berhasil pemberitahuan di portal Microsoft Azure.](../images/0601.png)
 
-2. Untuk menambahkan perangkat IoT baru, gulir ke bawah ke bagian **Explorer** dan klik **IoT Devices**. Kemudian, klik **+ Add, + Create, + New**.
+2. Untuk menambahkan perangkat IoT baru, gulir ke bawah ke bagian **Device Management** dan klik **Devices**. Lalu klik **+ Add Device**.
 
 	![Cuplikan layar panel perangkat IoT, yang disorot dalam bilah navigasi hub IoT, di portal Microsoft Azure. Tombol New disorot untuk mengilustrasikan cara menambahkan identitas perangkat IoT baru ke IoT hub.](../images/0602.png)
 

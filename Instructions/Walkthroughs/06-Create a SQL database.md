@@ -25,9 +25,10 @@ Dalam tugas ini, kita akan membuat database SQL berdasarkan database sampel Adve
     | Database name| **db1** | 
     | Server | Pilih **Create new** (Bilah samping baru akan terbuka di sebelah kanan)|
     | Server name | **sqlserverxxxx** (harus unik) | 
+    | Location | **(US) East US** |
+    | Authentication method | **Use SQL authentication** |
     | Server admin login | **sqluser** |
     | Password | **Pa$$w0rd1234** |
-    | Location | **(US) US Timur** |
     | Klik  | **OK** |
 
    ![Cuplikan layar dari panel Server dan panel Server Baru dengan bidang yang diisi sesuai tabel dan tombol Ulas + buat dan OK disorot.](../images/0501.png)
@@ -46,7 +47,7 @@ Dalam tugas ini, kita akan membuat database SQL berdasarkan database sampel Adve
 
     | Setting | Value | 
     | --- | --- |
-    | Azure Defender for SQL| **Not now** |
+    | Microsoft Defender for SQL| **Not now** |
     
 6. Pindah ke tab **Additional settings**. Kita akan menggunakan database sampel AdventureWorksLT.
 

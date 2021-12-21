@@ -28,7 +28,7 @@ Dalam tugas ini, Anda akan membuat Aplikasi Web Azure App Service.
     | Operating System | **Linux** |
     | Region | **East US** |
     
-    **Catatan** - Ingatlah untuk mengganti **xxxx** sehingga nama Aplikasi Web menjadi unik.
+    **Catatan:** Ingatlah untuk mengganti **xxxx** agar nama Aplikasi Web Anda menjadi unik.
 
 4. Klik **Next > Docker** dan konfigurasikan informasi kontainer.  
 
@@ -37,9 +37,9 @@ Dalam tugas ini, Anda akan membuat Aplikasi Web Azure App Service.
     | Options | **Single container** |
     | Image Source | **Docker Hub** |
     | Access Type | **Public** |
-    | Image and tag | **microsoft/aci-helloworld** |
+    | Image and tag | **mcr.microsoft.com/azuredocs/aci-helloworld** |
     
- **Catatan** Perintah mulai adalah opsional dan tidak diperlukan dalam latihan ini.
+ **Catatan:** Perintah mulai adalah opsional dan tidak diperlukan dalam latihan ini.
 
 5. Klik **Review + create**, lalu klk **Create**. 
 
