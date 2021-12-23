@@ -98,7 +98,7 @@ Dalam tugas ini, kita akan meninjau rekomendasi Azure Advisor untuk komputer vir
 
 1. Dari bilah **All services**, cari dan pilih **Advisor**. 
 
-2. Di bilah **Advisor**, pilih **Overview**. Rekomendasi pemberitahuan dikelompokkan berdasarkan Ketersediaan Tinggi, Keamanan, Performa, dan Biaya. 
+2. Di bilah **Advisor**, pilih **Overview**. Rekomendasi pemberitahuan dikelompokkan berdasarkan Keandalan, Keamanan, Performa, dan Biaya. 
 
     ![Cuplikan layar halaman Ringkasan Advisor. ](../images/1003.png)
 

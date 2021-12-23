@@ -26,7 +26,7 @@ Dalam tugas ini, kita akan membuat instans kontainer baru untuk aplikasi web.
 	| Region | **(US) East US** |
 	| Image source| **Docker Hub or other registry**|
 	| Image type| **Public**|
-	| Image| **microsoft/aci-helloworld**|
+	| Image| **mcr.microsoft.com/azuredocs/aci-helloworld**|
 	| OS type| **Linux** |
 	| Size| ***Leave at the default***|
 

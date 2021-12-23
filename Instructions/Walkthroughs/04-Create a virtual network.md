@@ -61,7 +61,7 @@ Dalam tugas ini, kita akan membuat dua komputer virtual di jaringan virtual.
 
     | Setting | Value |
     | --- | --- |
-    | Resource group | **myRGVNet** |
+    | Resource group | **pilih default di menu tarik-turun (sama seperti Tugas 1-3 & Tugas 2-2)** |
     | Virtual machine name |  **vm2** |
     | Virtual network | **vnet1** |
     | Public IP | **vm2-ip** |

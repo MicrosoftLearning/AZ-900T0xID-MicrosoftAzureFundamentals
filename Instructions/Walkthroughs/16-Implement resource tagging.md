@@ -23,7 +23,7 @@ Dalam tugas ini, kita akan mengonfigurasi kebijakan **Membutuhkan tag pada sumbe
 
    ![Cuplikan layar dari panel Definisi yang Tersedia dengan Memerlukan tag pada sumber daya yang dipilih.](../images/1701.png)
    
-6. Pada tab **Parameter**, ketik **Company** untuk nama tag. Lalu **Contoso** untuk Nilainya. Klik **Review + create.**, lalu klk **Create**.
+6.  Pada tab **Parameter**, ketik **Company** untuk nama tag. Klik **Review + create.**, lalu klk **Create**.
 
     ![Cuplikan layar panel Tetapkan kebijakan dengan nama Tag terisi.](../images/1702.png)
 
