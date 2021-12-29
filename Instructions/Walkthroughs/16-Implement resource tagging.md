@@ -3,7 +3,7 @@ wts:
     title: '16 - Menerapkan pemberian tag sumber daya (5 menit)'
     module: 'Modul 05: Mendeskripsikan fitur identitas, tata kelola, privasi, dan kepatuhan'
 ---
-# 16 - Menerapkan pemberian tag sumber daya (5 mnt)
+# 16 - Menerapkan pemberian tag sumber daya (5 menit)
 
 Dalam panduan ini, kita akan membuat penugasan kebijakan yang memerlukan pemberian tag, membuat akun penyimpanan dan menguji pemberian tag, menampilkan sumber daya dengan tag tertentu, dan menghapus kebijakan pemberian tag.
 
@@ -23,11 +23,11 @@ Dalam tugas ini, kita akan mengonfigurasi kebijakan **Membutuhkan tag pada sumbe
 
    ![Cuplikan layar dari panel Definisi yang Tersedia dengan Memerlukan tag pada sumber daya yang dipilih.](../images/1701.png)
    
-6.  Pada tab **Parameter**, ketik **Company** untuk nama tag. Klik **Review + create.**, lalu klk **Create**.
+6.  Di tab **Parameters**, ketikkan **Company : Contoso** untuk nama pasangan kunci/nilai. Klik **Review + create**, lalu klk **Create**.
 
     ![Cuplikan layar panel Tetapkan kebijakan dengan nama Tag terisi.](../images/1702.png)
 
-7. Penugasan kebijakan **Memerlukan tag pada sumber daya** sekarang diterapkan. Saat sumber daya dibuat, sumber daya harus menyertakan tag dengan kunci Perusahaan.
+7. Penugasan kebijakan **Memerlukan tag pada sumber daya** sekarang diterapkan. Saat sumber daya dibuat, sumber daya harus menyertakan tag dengan kunci Company : Contoso.
    **Catatan - Anda harus menunggu 30 menit hingga Kebijakan selesai diterapkan.** 
 
    ![Cuplikan layar dari panel Penugasan Kebijakan dengan lokasi yang diizinkan ditetapkan disorot.](../images/1703.png)
@@ -36,7 +36,7 @@ Dalam tugas ini, kita akan mengonfigurasi kebijakan **Membutuhkan tag pada sumbe
 
 Dalam tugas ini, kita akan membuat akun penyimpanan untuk menguji pemberian tag yang diperlukan. 
 
-1. Di Portal Microsoft Azure, dari bilah **All services**, cari dan pilih **Storage accounts**, lalu klik **+ Add +New +Create**.
+1. Di Portal Microsoft Azure, dari bilah **All services**, cari dan pilih **Storage accounts**, lalu klik **+Add +New +Create**.
 
 2. Pada tab **Basics** bilah **Create storage account**, isi informasi berikut (ganti **xxxx** pada nama akun penyimpanan dengan huruf dan angka sedemikian rupa sehingga namanya unik secara global). Gunakan pengaturan default untuk yang lainnya.
 
@@ -62,7 +62,7 @@ Dalam tugas ini, kita akan membuat akun penyimpanan untuk menguji pemberian tag 
 
     | Setting | Value | 
     | --- | --- |
-    | Tag name | **Company** (mungkin tidak ada dalam daftar menurun) |
+    | Tag name | **Company:Contoso** (mungkin tidak ada dalam daftar tarik-turun) |
 
 6. Klik **Review + create.** dan periksa bahwa validasi berhasil. Klik **Create** untuk menyebarkan akun penyimpanan. 
 

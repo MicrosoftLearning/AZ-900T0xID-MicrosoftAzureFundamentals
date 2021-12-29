@@ -13,7 +13,7 @@ Dalam tugas ini, kita akan membuat komputer virtual Windows Server 2019 Datacent
 
 1. Masuk ke [portal Microsoft Azure](https://portal.azure.com).
 
-2. Dari bilah **All services**, cari dan pilih **Virtual machines.**, lalu klik **+ Add, + Create, + New** Komputer Virtual.
+2. Dari bilah **All services**, cari dan pilih **Virtual machines**, lalu klik **+ Add, + Create, + New** Komputer Virtual.
 
 3. Pada tab **Basics**, isi informasi berikut (biarkan default untuk yang lainnya):
 
@@ -23,7 +23,7 @@ Dalam tugas ini, kita akan membuat komputer virtual Windows Server 2019 Datacent
     | Resource group | **Buat nama grup sumber daya baru** |
     | Virtual machine name | **SimpleWinVM** |
     | Region | **(US) East US**|
-    | Image | **Windows Server 2019 Datacenter Gen 1**|
+    | Image | **Windows Server 2019 Datacenter Gen 2**|
     | Size | **Standard D2s v3**|
     | Administrator account username | **azureuser** |
     | Administrator account password | **Pa$$w0rd1234**|
@@ -57,14 +57,14 @@ Dalam tugas ini, kita akan membuat komputer virtual Windows Server 2019 Datacent
 
 Dalam tugas ini, kami akan membuat kelompok keamanan jaringan dan mengaitkannya dengan antarmuka jaringan.
 
-1. Dari bilah **All services**, cari dan pilih **Network security groups**, lalu klik **+ Add,+ Create, + New**
+1. Dari bilah **All services**, cari dan pilih **Network security groups**, lalu klik **+ Add, + Create, + New**
 
 2. Pada tab **Basics** dari bilah **Create network security groups** tentukan pengaturan berikut.
 
     | Setting | Value |
     | -- | -- |
     | Subscription | **Gunakan langganan default** |
-    | Resource group | **Pilih default dari menu tarik turun** |
+    | Resource group | **Pilih default dari menu tarik-turun** |
     | Name | **myNSGSecure** |
     | Region | **(US) East US**  |
 
@@ -72,7 +72,7 @@ Dalam tugas ini, kami akan membuat kelompok keamanan jaringan dan mengaitkannya 
 
 4. Setelah NSG dibuat, klik **Go to resource**.
 
-5. Di bawah **Settings**, klik **Network interfaces**, lalu **+ Associate**.
+5. Di **Settings**, klik **Network interfaces**, lalu **Associate**.
 
 6. Pilih antarmuka jaringan yang Anda identifikasi di tugas sebelumnya. 
 

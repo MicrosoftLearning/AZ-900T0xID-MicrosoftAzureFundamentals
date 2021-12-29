@@ -86,17 +86,17 @@ Pada tugas ini, kita akan coba menguji apakah komputer virtual dapat berkomunika
 
 6. Anda mungkin menerima peringatan sertifikat selama proses masuk. Klik **Yes** untuk membuat koneksi dan menghubungkan ke komputer virtual yang disebarkan. Anda akan berhasil tersambung. Tutup Windows Server dan jendela Dasbor yang muncul. Anda akan melihat latar belakang Windows Biru. Kini Anda berada di komputer virtual.
 
-Catatan: Di komputer virtual yang baru dibuat, nonaktifkan firewall publik maupun privat dengan membuka menu Start > Pengaturan > Jaringan dan Internet > Cari Windows Firewall
+7. Di komputer virtual yang baru dibuat, nonaktifkan firewall publik maupun privat dengan membuka menu Start > Pengaturan > Jaringan dan Internet > Cari Windows Firewall
 
-7. Buka PowerShell komputer virtual dengan mengklik tombol **Start**, dan dalam Pencarian, ketikkan **PowerShell**, klik kanan **Windows PowerShell** ke **Run as administrator**
+8. Buka PowerShell di komputer virtual dengan mengklik tombol **Start**, dan di Pencarian, ketikkan **PowerShell**, klik kanan **Windows PowerShell**, lalu **Run as administrator**
 
-8. Di PowerShell, coba lakukan ping ke vm2 dengan mengetikkan:
+9. Di Powershell, coba lakukan ping ke vm2 dengan mengetikkan:
 
    ```PowerShell
    ping vm2
    ```
 
- 9. Anda akan berhasil. Anda telah melakukan ping ke VM2 dari VM1.
+ 10. Anda akan berhasil. Anda telah melakukan ping ke VM2 dari VM1.
 
 
 **Selamat!** Anda telah mengonfigurasi dan menyebarkan dua komputer virtual di sebuah jaringan virtual, lalu Anda telah dapat menghubungkan keduanya.
