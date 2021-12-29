@@ -13,19 +13,19 @@ Dalam tugas ini, kita akan menelusuri galeri Azure QuickStart dan menyebarkan te
 
 1. Dalam lingkungan lab, buka jendela browser, lalu masukkan T https://azure.microsoft.com/id-id/resources/templates/?azure-portal=true. Di galeri, Anda akan menemukan sejumlah templat populer dan baru-baru ini diperbarui. Templat ini mengotomatiskan penyebaran sumber daya Azure, termasuk penginstalan paket perangkat lunak populer. Telusuri berbagai jenis templat yang tersedia.
 
-3. Pilih **Deploy a simple Windows VM**
+2. Pilih **Deploy a simple Windows VM**
 
-4. Klik tombol **Deploy to Azure**. Sesi browser Anda akan secara otomatis dialihkan ke [portal Microsoft Azure](http://portal.azure.com/).
+3. Klik tombol **Deploy to Azure**. Sesi browser Anda akan secara otomatis dialihkan ke [portal Microsoft Azure](http://portal.azure.com/).
 
   **Catatan**: Tombol **Deploy to Azure** memungkinkan Anda menerapkan templat melalui portal Microsoft Azure. Selama penyebaran tersebut, Anda hanya akan diminta untuk sejumlah kecil parameter konfigurasi. 
 
-5. Saat diminta, masuk ke langganan Azure menggunakan kredensial yang diberikan sebelumnya dalam instruksi.
+4. Saat diminta, masuk ke langganan Azure menggunakan kredensial yang diberikan sebelumnya dalam instruksi.
 
-6. Klik **Edit template**. Format templat Resource Manager menggunakan format JSON. Tinjau parameter dan variabel.  Lalu temukan parameter untuk nama komputer virtual. Ubah nama menjadi **myVMTemplate**. **Simpan** perubahan Anda. 
+5. Klik **Edit template**. Format templat Resource Manager menggunakan format JSON. Tinjau parameter dan variabel.  Lalu temukan parameter untuk nama komputer virtual. Ubah nama menjadi **myVMTemplate**. **Simpan** perubahan Anda. 
 
     ![Cuplikan layar template dengan perubahan nama komputer virtual yang disorot.](../images/0901.png)
 
-7. Sekarang konfigurasikan parameter yang diperlukan oleh templat (ganti ***xxxx*** dalam awalan label DNS dengan huruf dan angka sehingga label tersebut unik secara global). Gunakan pengaturan default untuk yang lainnya. 
+6. Sekarang konfigurasikan parameter yang diperlukan oleh templat (ganti ***xxxx*** dalam awalan label DNS dengan huruf dan angka sehingga label tersebut unik secara global). Gunakan pengaturan default untuk yang lainnya. 
 
     | Setting| Value|
     |----|----|
@@ -38,9 +38,9 @@ Dalam tugas ini, kita akan menelusuri galeri Azure QuickStart dan menyebarkan te
     | OS version | **2019-Datacenter** |
 
 
-9. Klik **Review + Create**.
+7. Klik **Review + Create**.
 
-10. Pantau penyebarannya. 
+8. Pantau penyebarannya. 
 
 # Tugas 2: Memverifikasi dan memantau penyebaran komputer virtual Anda
 
