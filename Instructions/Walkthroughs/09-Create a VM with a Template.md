@@ -11,21 +11,21 @@ Dalam panduan ini, kita akan menyebarkan komputer virtual dengan templat QuickSt
 
 Dalam tugas ini, kita akan menelusuri galeri Azure QuickStart dan menyebarkan templat yang membuat komputer virtual. 
 
-1. Dalam lingkungan lab, buka jendela browser, lalu masukkan T https://azure.microsoft.com/en-us/resources/templates/?azure-portal=true. Di galeri, Anda akan menemukan sejumlah templat populer dan baru-baru ini diperbarui. Templat ini mengotomatiskan penyebaran sumber daya Azure, termasuk penginstalan paket perangkat lunak populer. Telusuri berbagai jenis templat yang tersedia.
+1. Dalam lingkungan lab, buka jendela browser, lalu masukkan T https://azure.microsoft.com/id-id/resources/templates/?azure-portal=true. Di galeri, Anda akan menemukan sejumlah templat populer dan baru-baru ini diperbarui. Templat ini mengotomatiskan penyebaran sumber daya Azure, termasuk penginstalan paket perangkat lunak populer. Telusuri berbagai jenis templat yang tersedia.
 
 3. Pilih **Deploy a simple Windows VM**
 
 4. Klik tombol **Deploy to Azure**. Sesi browser Anda akan secara otomatis dialihkan ke [portal Microsoft Azure](http://portal.azure.com/).
 
-    **Catatan**: Tombol **Deploy to Azure** memungkinkan Anda menerapkan templat melalui portal Microsoft Azure. Selama penyebaran tersebut, Anda hanya akan diminta untuk sejumlah kecil parameter konfigurasi. 
+  **Catatan**: Tombol **Deploy to Azure** memungkinkan Anda menerapkan templat melalui portal Microsoft Azure. Selama penyebaran tersebut, Anda hanya akan diminta untuk sejumlah kecil parameter konfigurasi. 
 
-5. Jika diminta, masuk ke langganan Azure Anda.
+5. Saat diminta, masuk ke langganan Azure menggunakan kredensial yang diberikan sebelumnya dalam instruksi.
 
-6. Di bilah **Custom Deployment**, klik **Edit template**. Format templat Resource Manager menggunakan format JSON. Tinjau parameter dan variabel.  Lalu temukan parameter untuk nama komputer virtual. Ubah nama menjadi **myVMTemplate**. **Simpan** perubahan Anda. Anda dikembalikan ke bilah **Custom deployment** di portal Microsoft Azure.
+6. Klik **Edit template**. Format templat Resource Manager menggunakan format JSON. Tinjau parameter dan variabel.  Lalu temukan parameter untuk nama komputer virtual. Ubah nama menjadi **myVMTemplate**. **Simpan** perubahan Anda. 
 
     ![Cuplikan layar template dengan perubahan nama komputer virtual yang disorot.](../images/0901.png)
 
-7. Pada bilah **Custom deployment**, konfigurasikan parameter yang diperlukan oleh templat (ganti ***xxxx*** dalam awalan label DNS dengan huruf dan angka sehingga label tersebut unik secara global). Gunakan pengaturan default untuk yang lainnya. 
+7. Sekarang konfigurasikan parameter yang diperlukan oleh templat (ganti ***xxxx*** dalam awalan label DNS dengan huruf dan angka sehingga label tersebut unik secara global). Gunakan pengaturan default untuk yang lainnya. 
 
     | Setting| Value|
     |----|----|

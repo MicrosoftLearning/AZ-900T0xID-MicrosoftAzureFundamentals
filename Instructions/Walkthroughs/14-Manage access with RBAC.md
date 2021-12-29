@@ -3,7 +3,7 @@ wts:
     title: '14 - Mengelola akses dengan RBAC (5 menit)'
     module: 'Modul 05: Mendeskripsikan fitur identitas, tata kelola, privasi, dan kepatuhan'
 ---
-# 14 - Mengelola akses dengan RBAC (5 mnt)
+# 14 - Mengelola akses dengan RBAC (5 menit)
 
 Dalam panduan ini, kita akan menetapkan peran izin ke sumber daya dan menampilkan log.
 
@@ -29,21 +29,19 @@ Dalam tugas ini, kita akan menetapkan peran Kontributor komputer virtual.
 5. **Refresh** halaman grup sumber daya dan klik entri yang mewakili grup sumber daya yang baru dibuat.
 
 6. Klik bilah **Access control (IAM)**, lalu alihkan ke tab **Roles**. Gulir melalui sejumlah besar definisi peran yang tersedia. Gunakan ikon Informasi untuk mendapatkan ide tentang izin setiap peran. Perhatikan juga informasi tentang jumlah pengguna dan grup yang ditetapkan ke setiap peran.
+7. 
+![Gambar](https://user-images.githubusercontent.com/89808319/144266949-f19d91ab-31d6-4c8b-af36-c00035925cf0.png)
 
-    ![Cuplikan layar dari blade peran IAM. Peran pemilik, kontributor, dan pembaca ditampilkan.](../images/1501.png)
+7. Beralih ke tab **Role assignments** pada bilah **myRGRBAC - Access control (IAM)**, klik **+ Add**, lalu klik **Add role assignment**. Cari peran Kontributor Komputer Virtual dan pilih. Beralih ke tab “Member” dan Tetapkan akses ke: User, group, or service principal. Kemudian, klik + Select members dan ketikkan nama Anda pada fungsi pencarian yang muncul, lalu tekan 'select.' Lalu tekan ‘Review and Assign’
 
-7. Beralih ke tab **Role assignments** pada bilah **myRGRBAC - Access control (IAM)**, klik **+ Add**, lalu klik **Add role assignment**. Tetapkan peran Kontributor Komputer Virtual ke akun pengguna Anda, lalu klik **Save**. 
+    
+    ![Gambar](https://user-images.githubusercontent.com/89808319/144266255-3a0f8574-9358-4c21-8f95-3503747e77c8.png)
 
-    | Setting | Value |
-    | -- | -- |
-    | Role | **Virtual machine contributor** |
-    | Assign access to | **user, group, or service principal** |
-    | Select | **Add your user account** |
  
 
     **Catatan:** Peran Kontributor komputer virtual memungkinkan Anda mengelola komputer virtual, tetapi tidak mengakses sistem operasinya atau mengelola jaringan virtual dan akun penyimpanan tempat itu tersambung.
 
-    ![Cuplikan layar halaman Tambahkan penetapan peran yang diisi dengan informasi yang diperlukan.](../images/1502.png)
+  
 
 8. **Refresh** halaman Penetapan peran dan pastikan Anda sekarang terdaftar sebagai Kontributor komputer virtual. 
 
