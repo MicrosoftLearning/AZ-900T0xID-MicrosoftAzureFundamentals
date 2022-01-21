@@ -1,4 +1,4 @@
----
+﻿---
 wts:
     title: '04 - Membuat jaringan virtual (20 menit)'
     module: 'Modul 02 – Layanan Core Azure (Beban Kerja)'
@@ -86,7 +86,7 @@ Pada tugas ini, kita akan coba menguji apakah komputer virtual dapat berkomunika
 
 6. Anda mungkin menerima peringatan sertifikat selama proses masuk. Klik **Yes** untuk membuat koneksi dan menghubungkan ke komputer virtual yang disebarkan. Anda akan berhasil tersambung. Tutup Windows Server dan jendela Dasbor yang muncul. Anda akan melihat latar belakang Windows Biru. Kini Anda berada di komputer virtual.
 
-7. Di komputer virtual yang baru dibuat, nonaktifkan firewall publik maupun privat dengan membuka menu Start > Pengaturan > Jaringan dan Internet > Cari Windows Firewall
+7. Di **kedua** komputer virtual yang baru dibuat, hubungkan melalui RDP dan nonaktifkan firewall publik maupun privat dengan membuka menu Start > Pengaturan > Jaringan dan Internet > Cari Windows Firewall.
 
 8. Buka PowerShell di komputer virtual dengan mengklik tombol **Start**, dan di Pencarian, ketikkan **PowerShell**, klik kanan **Windows PowerShell**, lalu **Run as administrator**
 
