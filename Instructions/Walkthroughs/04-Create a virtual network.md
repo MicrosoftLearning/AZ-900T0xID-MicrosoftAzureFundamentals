@@ -1,4 +1,4 @@
-﻿---
+---
 wts:
     title: '04 - Membuat jaringan virtual (20 menit)'
     module: 'Modul 02 – Layanan Core Azure (Beban Kerja)'
